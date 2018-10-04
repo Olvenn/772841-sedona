@@ -10,86 +10,95 @@
 <div class="page-wrapper">
 
     <header class="page-header">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
-        <divutton class="main-nav__toggle" type="button"><span class="visually-hidden">Кнопка открытия меню</span></button>
-        <ul class="nav">
-          <li class="nav__item  nav__item--active">
-            <a href="index.html">Главная</a>
-            <divutton class="nav__switch nav__switch--close" type="button">
-              <img src="" alt="Закрыть меню" width=" " height=" ">
-              </button>
-          </li>
-          <li class="nav__item">
-            <a href="photo.html">Фото и видео</a>
-          </li>
-          <li class="nav__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="nav__item">
-              <a href="#">HTML Academy</a>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Кнопка открытия меню</span></button>
+          <ul class="nav">
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="index.html">Главная</a>
+                <img src="img/new.jpg" alt="Закрыть меню" width="1000" height="1000">
             </li>
-        </ul>
-        <a class="main-nav__logo">
-          <h1 class="visually-hidden">Седона</h1>
-          <div>
-            <img src="" alt="Логотип города Sedona"/>
-          </div>
-        </a>
-        <div class="toggler"><divutton class="toggler__btn  toggler__btn--opened" id="toggler-btn"></button></div><!-- Класс гамбургера в открытом состоянии toggler__btn--opened -->
-      </nav>
-        <div class="header-picture">
-          <img class="header-picture__main" src="" alt="Добро пожаловать в Седону!" width="" height="">
-        </div>
-    </header>
+            <li class="main-nav__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+              </li>
+          </ul>
+          <a class="main-nav__logo"> 
+            <img src="img/new.jpg" alt="Логотип города Sedona"/>              
+          </a>
+        </nav>
+          
+      </header>
+
 
     <main class="page-main">
+
+        <div class="header-picture">
+            <img class="header-picture__main" src="img/new.jpg" alt="Добро пожаловать в Седону!" width="1000" height="1000">
+        </div>
 
       <h2 class="visually-hidden">Wellcome to Sedona!</h2>
 
         <section class="reasons">
-        <header class="reasons__header">
-          <h2 class="reasons__title main-headline">Седона - небольшой городок в Аризоне,
+          <header class="reasons__header">
+            <h2 class="reasons__title main-headline">Седона - небольшой городок в Аризоне,
             заслуживающий большего!</h2>
-          <div class="reasons__subtitle plain-text">Рассмотрим 5 причин,
+            <div class="reasons__subtitle plain-text">Рассмотрим 5 причин,
             по которым Седона круче, чем Гранд-Каньон!</div>
-        </header>
+          </header>
 
-        <ul class="reasons__list">
+          <ul class="reasons__list">
+
             <li class="reasons__item">
-              <div class="reasons__info town__info">
-                <div class="reasons__name main-headline main-headline--white">Настоящий городок</div>
-                <p class="reasons__number plain-text plain-text--white">&mdash; №1 &mdash;</p>
-                <p class="reasons__text plain-text plain-text--white">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-              </div>
-                <div>
-                <img class="reasons__pic" src="" alt="Городок Седона">
+                <div class="reasons__info reasons__info--town">
+                  <div class="reasons__name main-headline main-headline--white">Настоящий городок</div>
+                  <p class="reasons__number plain-text plain-text--white">&mdash; №1 &mdash;</p>
+                  <p class="reasons__text plain-text plain-text--white">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-              <ul class="town__list">
-                <li class="town__item town__item--accommodation">
-                  <div class="town__headline main-headline">Жильё</div>
-                  <p class="town__recommendation plain-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <div>
+                  <img class="reasons__pic" src="img/new.jpg" alt="Городок Седона">
+                  </div>
+              </li>
+
+              <li class="reasons__item">
+
+              <ul class="reasons__town-list">
+                <li class="reasons__town-item reasons__town-item--accommodation">
+                  <div class="reasons__town-headline main-headline">Жильё</div>
+                  <p class="reasons__town-recommendation plain-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li class="town__item town__item--souvenirs">
-                  <div class="town__headline main-headline">Сувениры</div>
-                  <p class="town__recommendation plain-text">Не только китайского, но и местного производства!</p>
+                <li class="reasons__town-item reasons__town-item--souvenirs">
+                  <div class="reasons__town-headline main-headline">Сувениры</div>
+                  <p class="reasons__town-recommendation plain-text">Не только китайского, но и местного производства!</p>
                 </li>
-                <li class="town__item town__item--food">
-                  <div class="town__headline main-headline">Еда</div>
-                  <p class="town__recommendation plain-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <li class="reasons__town-item reasons__town-item--food">
+                  <div class="reasons__town-headline main-headline">Еда</div>
+                  <p class="reasons__town-recommendation plain-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
               </ul>
-            </li>
+              </li>
+            </ul>
+              
 
+          </section>
 
-             <ul class="reasons__list">
-                <li class="reasons__item">
-                  <div class="reasons__info devils-bridge__info">
-                    <div class="reasons__name main-headline main-headline--white">Там есть мост дьявола</div>
-                    <p class="reasons__number plain-text plain-text--white">&mdash; №2 &mdash;</p>
-                    <p class="reasons__text  plain-text plain-text--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <section class="advantage">
+        
+            <h2 class="advantage__title main-headline visually-hidden">Преимущества Седоны</h2>
+
+             <ul class="advantage__list">
+                <li class="advantage__item">
+                  <div class="advantage__info main-headline">
+                    <div class="advantage__name main-headline main-headline--white">Там есть мост дьявола</div>
+                    <p class="advantage__number plain-text plain-text--white">&mdash; №2 &mdash;</p>
+                    <p class="advantage__text  plain-text plain-text--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                   </div>
                     <div>
-                    <img class="reasons__pic" src="" alt="Городок Седона">
+                    <img class="advantage__pic" src="img/new.jpg" alt="Городок Седона">
                     </div>
 
             <li class="advantage__wrapper">
@@ -107,12 +116,12 @@
                 <li class="advantage__item">
                   <div class="advantage__name main-headline">Мало туристов</div>
                   <p class="advantage__text plain-text">&mdash; №5 &mdash;</p>
-                  <p class="reasons__text plain-text">Большинство едет в Гранд-Каньон и толпится там</p>
+                  <p class="advantage__text plain-text">Большинство едет в Гранд-Каньон и толпится там</p>
                 </li>
               </ul>
             </li>
           </ul>
-        </section>
+        
       </section>
 
       <section class="hotels">
@@ -130,25 +139,32 @@
 
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__hashtag">#visitsedona</div>
-
-        <div class="page-footer__social social">
+    <footer class="page-footer">      
+        <p class="page-footer__hashtag">#visitsedona</p>
+  
+        <ul class="page-footer__social social">
+          <li class="page-footer__item">
           <a class="button social__link social__link--twitter" href="#"></a>
+          </li>
+          <li class="page-footer__item">
           <a class="button social__link social__link--facebook" href="#"></a>
+          </li>
+          <li class="page-footer__item">
           <a class="button social__link social__link--youtube" href="#"></a>
-        </div>
-
-        <div class="page_footer__copyright copyright">
+          </li>
+        </ul>
+  
+        <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href=""><svg class="copyright__logo" width="40" height="60"></svg></a>
-        </div>
-      </div>
+        </div>     
     </footer>
-  </div>
+
+
 
   </div>
+
+  
 
 
   </body>
