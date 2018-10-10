@@ -1,0 +1,19 @@
+.page-wrapper {
+  @include mobile-container();  
+}
+
+///tablet///
+
+@media (min-width: $tablet-width) {
+  .page-wrapper {
+  @include tablet-container();
+  }
+}
+
+///desktop
+
+@media (min-width: $desktop-width) {
+  .page-wrapper {
+  @include desktop-container();
+  }
+}

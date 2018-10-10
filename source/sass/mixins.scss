@@ -1,0 +1,72 @@
+@mixin headline() {
+  font-family: $bold-font;
+  font-size: $headline-size;
+  line-height: $headline-height;
+  color: $main-text-color;
+  text-transform: uppercase;
+}
+
+@mixin text() {
+  font-family: $base-font;
+  font-size: $text-size;
+  line-height: $text-height;
+  color: $main-text-color;
+}
+
+@mixin text-light() {
+  font-family: $base-font;
+  font-size: $text-size;
+  line-height: $text-height;
+  color: $bg;
+}
+
+@mixin headline-light() {
+  font-family: $bold-font;
+  font-size: $headline-size;
+  line-height: $headline-height;
+  color: $bg;
+  text-transform: uppercase;
+}
+
+@mixin form-text() {
+  font-family: $bold-font;
+  font-size: $headline-size;
+  line-height: $headline-height;
+  color: $main-text-color;
+}
+
+@mixin list-style() {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+@mixin mobile-container() {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin mobile-content() {
+  width: 280px;
+  padding: 0 20px;
+}
+
+@mixin tablet-container() {
+  width: 768px;
+  margin: 0 auto;
+}
+
+@mixin tablet-content() {
+  width: 648px;
+  padding: 0 60px;
+}
+
+@mixin desktop-container() {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin desktop-content() {
+  width: 960px;
+  padding: 0 120px;
+}

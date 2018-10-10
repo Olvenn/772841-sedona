@@ -1,0 +1,47 @@
+/// c o l o r s
+$bg: #ffffff; /*основной фон*/
+$main-text-color: #000000;
+$main-color: #81b3d2; /*основной цвет сайта, основной для кнопок, информации*/
+$footer-color: #fefefe; /*цвет фона подвала*/
+
+$btn-color: $main-color; /*основной фон для кнопок и информации*/
+$btn-hover-color: #669ec0; /*фон при наведении наведении*/
+$btn-down-color: #5496db; /*фон при нажатии*/
+$text-down-color: rgba(129, 179, 210, 0.3);
+
+
+$input-main: #f2f2f2; /*основной цвет кнопок для формы, фон video-mobile*/
+$input-main-hover: #e5e5e5;
+$input-main-down: #d5d5d5;
+$input-main-down-checked: #a4a4a4;
+$form-icon: #e6e6e6;
+$form-botder: #dbdbdb;
+$lable-text: #333333; /*Текст для lable, для видео-контроль-ховер*/
+$border-top-color: #678fa8;
+$border-bottom-color: #9ac2db;
+
+
+$main-menu-active-color: #766357; /*фон при нажатии*/
+$main-menu-active-hover-color: #604e43;
+$main-menu-active-down-color: #766357;
+
+$video-control: #5c6870;
+$video-control-hover: $lable-text;
+$video-control-down: #b8b8b8;
+$video-bg-desktop: #666666;
+$video-desktop-control-hover: #c2c2c2;
+$video-desktop-control-down: #949494;
+
+/// fonts
+$base-font: "PT Sans", sans-serif;
+$bold-font: "PT Sans Bold", "Helvetica", sans-serif;
+$headline-size: 18px;
+$headline-height: 26px;
+$text-height: 21px;
+$text-size: 14px;
+
+/// size
+
+$mobile-width-max: 767px;
+$tablet-width: 768px;
+$desktop-width: 1200px;

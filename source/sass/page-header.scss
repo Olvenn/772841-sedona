@@ -1,0 +1,21 @@
+.page-header {
+  @include mobile-container();
+  background-color: $bg;
+  margin: 0 auto;
+}
+
+/// tablet
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    @include tablet-container();
+  }
+}
+
+/// desktop
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include desktop-container();
+  }
+}
