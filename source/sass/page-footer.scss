@@ -1,0 +1,17 @@
+.page-footer {
+  @include mobile-container();
+  background-color: $bg;
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 37px;
+  text-align: center;
+}
+
+.page-footer__hashtag {
+  @include headline();
+}
+

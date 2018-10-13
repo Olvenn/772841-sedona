@@ -1,49 +1,62 @@
 /// mobile
 
+.page-main {
+  @include mobile-container();
+}
+
 .reasons__header {
-  width: 260px;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
   background-color: $bg;
+  margin: 0 auto;
 }
 
-
+.main-headline {
+  @include headline();
+}
 
 .main-nav__logo-img {
   width: 320px;
+  @include list-style();
 }
 
-
-
-.reasons__headline {
-  line-height: 26px;
-}
-
-.reasons__subline {
-  line-height: 26px;
+.reasons__subtitle {
+  @include  text();
   margin-top: 30px;
 }
-
 .reasons__list {
-  background-color: $info-bg;
+   @include list-style();
+   background-color: $bg;
+}
+
+.reasons__info--fullcolour {
+  background-color: $main-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .reasons__item {
   text-align: center;
+  padding-top: 32px;
+  padding-right: 15px;
+  padding-bottom: 32px;
+  padding-left: 15px;
 
-  &--detailed {
-    background-color: $theme-color;
+  &--advantage {
+    background-color: #eeeeee;
   }
 
-  &--short {
+  &--advantage {
+    background-color: #eeeeee;
     padding-top: 32px;
     padding-right: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
-    border-bottom: 1px solid $reasons-border;
+    border-bottom: 1px solid #d6d6d6;
   }
 
   &--short:last-child {
@@ -57,7 +70,7 @@
   line-height: 26px;
 
   &--detailed {
-    color: $light-text-color;
+    color: $bg;
   }
 }
 
@@ -79,14 +92,43 @@
   padding-right: 20px;
 }
 
-//////////// m o b i l e . o n l y ////////////
+/// left
 
-@media (max-width: $mobile-width-max) {
-  .reasons__header {
-    padding-bottom: 0;
-  }
-
-  .reasons__name br {
-    display: none;
-  }
+.reasons__name--town {
+  text-align: left;
+  padding-left: 50px;
 }
+
+.reasons__subtitle--recommendation {
+  text-align: left;
+  padding-left: 50px;
+}
+
+.true-town__item {
+  padding-left: 50px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-color: $main-color;
+}
+
+  .reasons__item--accommodation {
+    background-image: url("../img/icon-house.svg");
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+    background-size: 37px 37px;
+  }
+
+  .reasons__item--souvenirs {
+    background-image: url("../img/icon-gift.svg");
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+    background-size: 37px 37px;
+  }
+
+  .reasons__item--food {
+    background-image: url("../img/icon-burger.svg");
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+    background-size: 37px 37px;
+  }

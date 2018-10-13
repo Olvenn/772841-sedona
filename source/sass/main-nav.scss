@@ -1,22 +1,28 @@
 /// mobile
 
 .main-nav {
+  position: relative;
   background-color: $bg;
-  width: 100%;
+  width: 320px;
+  min-height: 56px;
+  margin: 0 auto;
 }
 
 .main-nav__list {
   width: 100%;
+  @include list-style();
 }
-
 
 .main-nav__logo {
-  margin: 0 auto;
+  max-width: 52px;
 }
-
 
 .main-nav__item--logo {
   display: block;
+}
+
+.main-nav__logo-img {
+  max-width: 102px;
 }
 
 .main-nav__switch {
@@ -48,7 +54,7 @@
     font-size: 18px;
     height: 56px;
     background-color: $main-color;
-    line-height: 56px;
+    line-height: 40px;
     text-align: center;
     padding: 0px;
     border-top: 1px solid $border-top-color;
@@ -74,7 +80,7 @@
 
   .main-nav__item a {
     display: block;
-    padding: 0px;
+    padding: 10px;
     color: $bg;
     text-decoration: none;
   }
@@ -84,11 +90,79 @@
     color: rgba($bg, 0.3);
   }
 
-  .main-nav--opened .main-nav__item, {
+
+
+  .main-nav__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    outline: none;
+
     display: block;
+    width: 70px;
+    height: 50px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+    border: none;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+    }
   }
 
-  .main-nav--closed .main-nav__item:not(.main-nav__item--logo) {
-    display: none;
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+    left: 17px;
+
+    width: 36px;
+    height: 2px;
+
+    background-color: transparent;
+    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
   }
 
+  .main-nav--closed .main-nav__toggle:active::before {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 0;
+    right: 0;
+    left: auto;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 28px;
+      left: 18px;
+
+      width: 36px;
+      height: 2px;
+
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }

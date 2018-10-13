@@ -19,7 +19,7 @@
 
   &:focus,
   &:active {
-    color: rgba($btn-down-color, 0.3);
+    color: $text-down-color;
     background-color: $btn-down-color;
   }
 

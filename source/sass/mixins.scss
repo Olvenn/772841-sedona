@@ -11,6 +11,7 @@
   font-size: $text-size;
   line-height: $text-height;
   color: $main-text-color;
+  text-transform: uppercase;
 }
 
 @mixin text-light() {
@@ -40,6 +41,7 @@
   padding: 0px;
   list-style: none;
 }
+
 
 @mixin mobile-container() {
   width: 320px;

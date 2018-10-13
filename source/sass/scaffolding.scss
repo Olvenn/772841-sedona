@@ -4,8 +4,8 @@ body {
   margin: 0;
   min-width: 320px;
   height: 100%;
-  font-family: $base-font; 
-  font-weight: normal;  
+  font-family: $base-font;
+  font-weight: normal;
   line-height: 21px;
   background-color: $bg;
 }
@@ -15,7 +15,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
