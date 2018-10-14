@@ -4,6 +4,7 @@
   line-height: $headline-height;
   color: $main-text-color;
   text-transform: uppercase;
+  text-align: center;
 }
 
 @mixin text() {
@@ -12,6 +13,7 @@
   line-height: $text-height;
   color: $main-text-color;
   text-transform: uppercase;
+  text-align: center;
 }
 
 @mixin text-light() {
@@ -19,6 +21,7 @@
   font-size: $text-size;
   line-height: $text-height;
   color: $bg;
+  text-align: center;
 }
 
 @mixin headline-light() {
@@ -27,6 +30,15 @@
   line-height: $headline-height;
   color: $bg;
   text-transform: uppercase;
+}
+
+@mixin photo-description-text() {
+  font-family: $bold-font;
+  font-size: $photo-title-size;
+  line-height: $text-height-photo;
+  color: $main-text-color;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 @mixin form-text() {
@@ -49,7 +61,7 @@
 }
 
 @mixin mobile-content() {
-  width: 280px;
+  width: 320px;
   padding: 0 20px;
 }
 
