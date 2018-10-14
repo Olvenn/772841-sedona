@@ -1,7 +1,7 @@
 @mixin headline() {
   font-family: $bold-font;
-  font-size: $headline-size;
-  line-height: $headline-height;
+  font-size: $headline-size; /*18*/
+  line-height: $headline-height; /*26*/
   color: $main-text-color;
   text-transform: uppercase;
   text-align: center;
@@ -9,8 +9,8 @@
 
 @mixin text() {
   font-family: $base-font;
-  font-size: $text-size;
-  line-height: $text-height;
+  font-size: $text-size; /*14*/
+  line-height: $text-height; /*21*/
   color: $main-text-color;
   text-transform: uppercase;
   text-align: center;
@@ -18,24 +18,24 @@
 
 @mixin text-light() {
   font-family: $base-font;
-  font-size: $text-size;
-  line-height: $text-height;
+  font-size: $text-size; /*14*/
+  line-height: $text-height; /*21*/
   color: $bg;
   text-align: center;
 }
 
 @mixin headline-light() {
   font-family: $bold-font;
-  font-size: $headline-size;
-  line-height: $headline-height;
+  font-size: $headline-size; /*18*/
+  line-height: $headline-height; /*26*/
   color: $bg;
   text-transform: uppercase;
 }
 
 @mixin photo-description-text() {
   font-family: $bold-font;
-  font-size: $photo-title-size;
-  line-height: $text-height-photo;
+  font-size: $photo-title-size; /*21*/
+  line-height: $text-height-photo; /*24*/
   color: $main-text-color;
   text-transform: uppercase;
   text-align: left;
@@ -43,9 +43,19 @@
 
 @mixin form-text() {
   font-family: $bold-font;
-  font-size: $headline-size;
-  line-height: $headline-height;
+  font-size: $headline-size; /*18*/
+  line-height: $headline-height;  /*26*/
   color: $main-text-color;
+  text-align: left;
+}
+
+@mixin form-text-legend() {
+  font-family: $base-font;
+  font-size: $text-size; /*14*/
+  line-height: $headline-height;  /*26*/
+  color: $main-text-color;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 @mixin list-style() {

@@ -1,0 +1,324 @@
+.main-form,
+.feedback-form,
+.feedback,
+.header-picture {
+  @include mobile-container();
+  max-width: 280px;
+}
+
+.feedback__title {
+  @include headline();
+}
+
+.feedback__slogan {
+  @include text();
+}
+
+.feedback-form__fieldset {
+  @include mobile-container();
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid $photo-border;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.feedback-form__input--text,
+.feedback-form__label--radio,
+.feedback-form__label--checkbox,
+.feedback-form__textarea {
+  @include form-text();
+  text-transform: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $main-text-color;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: $main-text-color;
+}
+
+.feedback-form__legend {
+  @include headline();
+  width: 280%;
+  padding-top: 20px;
+  width: 280px;
+}
+
+.feedback-form__label {
+  @include form-text-legend();
+}
+
+.feedback-form__input--text,
+.feedback-form__textarea {
+  background-color: $input-main;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: $input-main-hover;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $bg;
+    outline: none;
+    box-shadow: 0 0 0 4px $input-main-hover inset;
+  }
+}
+
+
+.feedback-form__input-wrapper {
+  width: 280px;
+}
+
+.feedback-form__input-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.feedback-form__input--background {
+  width: 280px;
+}
+
+.feedback-form__icon--mail {
+  width: 280px;
+}
+
+.feedback-form__input-wrapper--contact {
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.feedback-form__input--text,
+.feedback-form__input--text {
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.feedback-form__icon {
+  display: flex;
+  width: 280px;
+}
+
+.feedback-form__input--text[type="tel"],
+.feedback-form__input--text[type="mail"] {
+  display: flex;
+}
+
+.feedback-form__icon::after {
+  content: "";
+  width: 58px;
+  background-color: $form-icon;
+  background-position: center;
+  background-size: 18px;
+  background-repeat: no-repeat;
+}
+
+.feedback-form__icon--tel::after {
+  background-image: url("../img/icon-phone.svg");
+}
+
+.feedback-form__icon--mail::after {
+  background-image: url("../img/icon-mail.svg");
+}
+/*
+.form__label--radio {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+*/
+.feedback-form__input-wrapper--impression {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.feedback-form__label--radio {
+  padding-left: 70px;
+}
+
+.feedback-form__label--radio::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  border: 17px solid $input-main;
+  border-radius: 50%;
+  background-color: $input-main;
+  position: absolute;
+  cursor: pointer;
+  top: -5px;
+  left: 0px;
+}
+
+.feedback-form__label--radio:hover::before {
+  background-color: $input-main-hover;
+  border-color: $input-main-hover;
+}
+
+.feedback-form__label--radio:focus::before,
+.feedback-form__label--radio:active::before {
+  background-color: $input-main-down;
+  border-color: $input-main-down;
+}
+
+.feedback-form__input--radio:checked ~ .feedback-form__label--radio::before,
+.feedback-form__input--radio:checked ~ .feedback-form__label--radio::before {
+  background-color: $main-text-color;
+}
+
+.feedback-form__input:checked ~ .feedback-form-form__input__label--radio:focus::before,
+.feedback-form__input--radio:checked ~ .feedback-form__label--radio:active::before {
+  background-color: rgba($main-text-color, 0.3);
+}
+
+.form__input--radio:disabled ~ .form__label--radio {
+  opacity: 0.3;
+}
+
+.form__input--radio:disabled ~ .form__label--radio::before {
+  background-color: $input-main;
+  border-color: $input-main;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $input-main;
+    border-color: $input-main;
+  }
+}
+
+
+
+
+
+
+.form__label--checkbox {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.form__label--checkbox::before {
+  content: "";
+  width: 56px;
+  height: 56px;
+  margin-right: 24px;
+  background-color: $input-main;
+  border-radius: 5px;
+}
+
+.form__label--checkbox:hover::before {
+  background-color: $input-main-hover;
+}
+
+.form__label--checkbox:focus::before,
+.form__label--checkbox:active::before {
+  background-color: $input-main-down;
+}
+
+.form__input--checkbox:checked ~ .form__label--checkbox::before {
+  background-position: center;
+  background-image: url("../img/icon-tick.svg");
+  background-size: 25px;
+  background-repeat: no-repeat;
+}
+
+.form__input--checkbox:checked ~ .form__label--checkbox:focus::before,
+.form__input--checkbox:checked ~ .form__label--checkbox:active::before {
+  background-image: url("../img/icon-tick-down.svg");
+}
+
+.form__input--checkbox:disabled ~ .form__label--checkbox {
+  opacity: 0.3;
+}
+
+.form__input--checkbox:disabled ~ .form__label--checkbox::before {
+  background-color: $input-main;
+  background-image: none;
+}
+
+
+.form__textarea {
+  width: 280px;
+  max-width: 280px;
+  min-height: 160px;
+  box-sizing: border-box;
+}
+
+.form__bottom {
+  margin-top: 50px;
+}
+
+.form__submit {
+  width: 280px;
+  margin-top: 0;
+}
+
+.form__required {
+  display: none;
+}
+
+
+
+
+
+
+
+
+.form__fieldset--contact .form__label {
+  padding-left: 22px;
+  margin-bottom: 9px;
+}
+
+.form__fieldset--emotions {
+  text-align: center;
+}
+
+
+.feedback-form__label--text {
+  margin-right: 12px;
+}
+
+.form__input--text:focus, /*feedback-form__input--text*/
+.form__input--text:active {
+  margin-right: -4px;
+}
+
+
+.form__group--impression {
+  justify-content: flex-start;
+  margin-bottom: 13px;
+}
+
+.form__group--contact {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__group--sights {
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.form__input--text {
+  width: 120px;
+  flex-grow: 1;
+  box-sizing: border-box;
+}

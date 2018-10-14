@@ -3,7 +3,7 @@ $bg: #ffffff; /*основной фон*/
 $main-text-color: #000000;
 $main-color: #81b3d2; /*основной цвет сайта, основной для кнопок, информации*/
 $footer-color: #fefefe; /*цвет фона подвала*/
-$path_img: 'img/';
+$path_img: '../img/';
 
 $btn-color: $main-color; /*основной фон для кнопок и информации*/
 $btn-hover-color: #669ec0; /*фон при наведении наведении*/
@@ -20,7 +20,7 @@ $form-border: #dbdbdb;
 $lable-text: #333333; /*Текст для lable, для видео-контроль-ховер*/
 $border-top-color: #678fa8;
 $border-bottom-color: #9ac2db;
-$photo-border: #e5e5e5;
+$photo-border: #e5e5e5; /*Отделяющая черта в фото и форме*/
 
 
 $main-menu-active-color: #766357; /*фон при нажатии*/
