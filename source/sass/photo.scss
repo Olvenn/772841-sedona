@@ -5,6 +5,12 @@
 
 .photo__wrapper {
   @include mobile-container();
+  border-top: 1px solid $form-border;
+  padding-top: 10px;
+
+  &:last-child {
+    border-bottom: 1px solid $form-border;
+  }
 }
 
 .main-headline {
@@ -18,8 +24,12 @@
 
 .photo__author {
   @include photo-description-text();
-  padding-top: 10px;
+  padding-top: 3px;
   padding-bottom: 10px;
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  color: $main-text-color;
+  text-transform: none;
 }
 
 .photo__title,
@@ -29,29 +39,11 @@
   padding-bottom: 10px;
 }
 
-.photo__author {
-  font-family: "PT Sans", sans-serif;
-  margin: 0;
-  padding-top: 3px;
-  color: $main-text-color;
-  text-transform: none;
-}
-
 .photo__sum-likes {
   padding-left: 42px;
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
   background-size: 22px;
-  background-position: 0px 10px;
+  background-position: 1px 1px;/*?*/
   box-sizing: border-box;
 }
-
-.photo__wrapper {
-  border-top: 1px solid $form-border;
-  padding-top: 10px;
-
-  &:last-child {
-   border-bottom: 1px solid $form-border;
-  }
-}
-

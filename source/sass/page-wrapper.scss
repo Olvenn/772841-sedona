@@ -1,12 +1,12 @@
 .page-wrapper {
-  @include mobile-container();  
+  @include mobile-container();
 }
 
 ///tablet///
 
 @media (min-width: $tablet-width) {
   .page-wrapper {
-  @include tablet-container();
+    @include tablet-container();
   }
 }
 
@@ -14,6 +14,6 @@
 
 @media (min-width: $desktop-width) {
   .page-wrapper {
-  @include desktop-container();
+    @include desktop-container();
   }
 }
