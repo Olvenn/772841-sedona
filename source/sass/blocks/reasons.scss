@@ -15,16 +15,6 @@
   margin: 0 auto;
 }
 
-.main-headline {
-  @include headline();
-}
-
-.main-nav__logo-img {
-  width: 320px;
-
-  @include list-style();
-}
-
 .reasons__subtitle {
   @include text();
   margin-top: 30px;
@@ -84,12 +74,6 @@
   display: block;
 }
 
-.reasons__short {
-  width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 /// left
 
 .reasons__name--town {
@@ -100,14 +84,6 @@
 .reasons__subtitle--recommendation {
   text-align: left;
   padding-left: 50px;
-}
-
-.true-town__item {
-  padding-left: 50px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-size: 40px;
-  background-color: $main-color;
 }
 
 .reasons__item--accommodation {

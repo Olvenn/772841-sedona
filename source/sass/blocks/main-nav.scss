@@ -14,9 +14,11 @@
   @include list-style();
 }
 
+
 .main-nav__logo {
   max-width: 52px;
 }
+
 
 .main-nav__item--logo {
   display: block;
@@ -25,6 +27,14 @@
 .main-nav__logo-img {
   max-width: 102px;
 }
+
+/*
+.main-nav__logo-img {
+  width: 320px;
+
+  @include list-style();
+}
+*/
 
 .main-nav__switch {
   position: absolute;

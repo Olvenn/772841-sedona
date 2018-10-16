@@ -22,6 +22,7 @@
   line-height: $text-height; /*21*/
   color: $bg;
   text-align: center;
+  text-transform: uppercase;
 }
 
 @mixin headline-light() {
