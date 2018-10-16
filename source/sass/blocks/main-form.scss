@@ -1,0 +1,4 @@
+.main-form {
+  @include mobile-container();
+  max-width: 280px;
+}

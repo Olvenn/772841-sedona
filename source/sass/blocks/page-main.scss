@@ -1,0 +1,18 @@
+.page-main {
+  @include mobile-container();
+  max-width: 320px;
+}
+
+.page-main__main-headline {
+  @include headline();
+}
+
+.page-main__main-headline--white {
+  @include headline();
+  color: $bg;
+}
+
+.page-main__plain-text--white {
+  @include text-light();
+  font-family: $base-font;
+}

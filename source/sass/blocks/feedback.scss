@@ -1,0 +1,14 @@
+.main-form,
+.feedback,
+.header-picture {
+  @include mobile-container();
+  max-width: 280px;
+}
+
+.feedback__title {
+  @include headline();
+}
+
+.feedback__slogan {
+  @include text();
+}

@@ -1,0 +1,47 @@
+.hotels {
+  @include mobile-content();
+  width: 320px;
+  padding-top: 132px;
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.hotels__title {
+  @include headline();
+}
+
+.hotels__description {
+  @include text();
+}
+
+.hotels__search {
+  display: block;
+  margin-top: 40px;
+}
+
+.hotels__map {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 5px;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/icon-map-marker.svg");
+    z-index: 3;
+  }
+}

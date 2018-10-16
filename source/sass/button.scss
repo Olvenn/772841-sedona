@@ -1,0 +1,29 @@
+.button {
+  font-family: $bold-font;
+  font-size: 21px;
+  line-height: 26px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+  color: $bg;
+  background-color: $btn-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+
+  &:focus,
+  &:active {
+    color: $text-down-color;
+    background-color: $btn-down-color;
+  }
+
+  &--disabled {
+    background-color: $input-main-hover;
+  }
+}

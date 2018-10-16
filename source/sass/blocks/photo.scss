@@ -1,0 +1,49 @@
+.photo__header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.photo__wrapper {
+  @include mobile-container();
+  border-top: 1px solid $form-border;
+  padding-top: 10px;
+
+  &:last-child {
+    border-bottom: 1px solid $form-border;
+  }
+}
+
+.main-headline {
+  @include headline();
+}
+
+.plain-text {
+  @include text();
+  text-align: center;
+}
+
+.photo__author {
+  @include photo-description-text();
+  padding-top: 3px;
+  padding-bottom: 10px;
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  color: $main-text-color;
+  text-transform: none;
+}
+
+.photo__title,
+.photo__sum-likes {
+  @include photo-description-text();
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.photo__sum-likes {
+  padding-left: 42px;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 1px 1px;/*?*/
+  box-sizing: border-box;
+}

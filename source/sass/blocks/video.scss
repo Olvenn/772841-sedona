@@ -1,0 +1,23 @@
+.video {
+  width: 320px;
+
+  @include mobile-container();
+  border: none;
+  padding-bottom: 100px;
+}
+
+.video__header {
+  width: 320px;
+}
+
+.video__title {
+  @include headline();
+}
+
+.plain-text {
+  @include text();
+}
+
+.video_presentation {
+  position: relative;
+}

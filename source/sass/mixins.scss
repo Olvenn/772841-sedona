@@ -1,0 +1,97 @@
+@mixin headline() {
+  font-family: $bold-font;
+  font-size: $headline-size; /*18*/
+  line-height: $headline-height; /*26*/
+  color: $main-text-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin text() {
+  font-family: $base-font;
+  font-size: $text-size; /*14*/
+  line-height: $text-height; /*21*/
+  color: $main-text-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin text-light() {
+  font-family: $base-font;
+  font-size: $text-size; /*14*/
+  line-height: $text-height; /*21*/
+  color: $bg;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin headline-light() {
+  font-family: $bold-font;
+  font-size: $headline-size; /*18*/
+  line-height: $headline-height; /*26*/
+  color: $bg;
+  text-transform: uppercase;
+}
+
+@mixin photo-description-text() {
+  font-family: $bold-font;
+  font-size: $photo-title-size; /*21*/
+  line-height: $text-height-photo; /*24*/
+  color: $main-text-color;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+@mixin form-text() {
+  font-family: $bold-font;
+  font-size: $headline-size; /*18*/
+  line-height: $headline-height;  /*26*/
+  color: $main-text-color;
+  text-align: left;
+}
+
+@mixin form-text-legend() {
+  font-family: $base-font;
+  font-size: $text-size; /*14*/
+  line-height: $headline-height;  /*26*/
+  color: $main-text-color;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+@mixin list-style() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+@mixin mobile-container() {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin mobile-content() {
+  width: 320px;
+  padding: 0 20px;
+}
+
+@mixin tablet-container() {
+  width: 768px;
+  margin: 0 auto;
+}
+
+@mixin tablet-content() {
+  width: 648px;
+  padding: 0 60px;
+}
+
+@mixin desktop-container() {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin desktop-content() {
+  width: 960px;
+  padding: 0 120px;
+}
