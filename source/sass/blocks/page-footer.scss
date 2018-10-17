@@ -7,10 +7,34 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 37px;
+  padding-top: 38px;
   text-align: center;
 }
 
 .page-footer__hashtag {
   @include headline();
+}
+
+/// tablet
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    @include tablet-container();
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+}
+
+
+/// desktop
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    @include desktop-container();
+
+  }
 }
