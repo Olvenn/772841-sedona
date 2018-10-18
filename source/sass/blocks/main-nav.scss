@@ -24,14 +24,6 @@
 }
 */
 
-.main-nav__switch {
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  padding: 0;
-  background: none;
-  border: none;
-}
 
 .main-nav__button {
   width: 23px;
@@ -105,6 +97,8 @@
   color: rgba($bg, 0.3);
 }
 
+/*кнопка*/
+
 .main-nav__toggle {
   position: absolute;
   top: 0;
@@ -174,15 +168,17 @@
   }
 }
 
+/*кнопка*/
 
 
 ///tablet
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 100%;
+    @include tablet-container();
   }
-  .main-nav__list {
+
+    .main-nav__list {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -224,6 +220,6 @@
 @media (min-width: $desktop-width) {
 
   .main-nav {
-    width: 100%;
+    @include desktop-container();
   }
 }

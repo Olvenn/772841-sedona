@@ -1,8 +1,7 @@
-.main-form,
-.feedback,
-.header-picture {
+
+.feedback {
   @include mobile-container();
-  max-width: 280px;
+  margin: 0 auto;
 }
 
 .feedback__title {
@@ -11,4 +10,31 @@
 
 .feedback__slogan {
   @include text();
+}
+
+
+
+///tablet
+
+@media (min-width: $tablet-width) {
+
+
+  .feedback {
+    @include tablet-container();
+    width: 100%;
+
+    }
+
+  .feedback__header {
+    width: 455px;
+    margin: 0 auto;
+  }
+}
+
+///desktop
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    @include desktop-container();
+  }
 }

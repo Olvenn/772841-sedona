@@ -1,10 +1,5 @@
 /// mobile
 
-.reasons {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .reasons__header {
   width: 320px;
   /*padding-left: 20px;
@@ -23,16 +18,10 @@
 
 .reasons__list {
   @include list-style();
-  padding: 0;
-  margin: 0;
+
   background-color: $bg;
 }
 
-.reasons__info--fullcolour {
-  background-color: $main-color;
-  padding-top: 32px;
-  padding-bottom: 22px;
-}
 
 .reasons__item {
   text-align: center;
@@ -40,6 +29,7 @@
   /*padding-right: 15px;
   padding-left: 15px;*/
   padding-bottom: 32px;
+  box-sizing: border-box;
 
   &--advantage {
     background-color: #eeeeee;
@@ -48,7 +38,7 @@
     padding-bottom: 15px;
     padding-left: 15px;
     border-bottom: 1px solid #d6d6d6;
-  }
+}
 
   &--short:last-child {
     border-bottom: none;
@@ -66,11 +56,29 @@
 }
 
 
+
+
+
+
+
+
 /// left
+.reasons__text,
+.reasons__name {
+  text-align: left;
+  padding-left: 50px;
+}
 
 .reasons__name--town {
   text-align: left;
   padding-left: 50px;
+}
+
+
+
+
+.reasons__text{
+  padding-bottom: 8px;
 }
 
 .reasons__subtitle--recommendation {
@@ -100,66 +108,52 @@
 }
 
 
-@media (min-width: $tablet-width) {
-  .reasons {
-    width: 100%;
-  }
+///tablet
 
-  .reasons__header {
-    width: 490px;
-  }
+@media (min-width: $tablet-width) {
 
   .reasons__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
   .reasons__item {
-    width: 256px;
+    width: 33.3%;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
 
-    &--advantage {
-
-      padding-right: 0px;
-
-      padding-left: 0px;
-
-    }
   }
 
   .reasons__item--fullcolour {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 100%;;
-    border: none;
+    flex-basis: 100%;
   }
 
-    .reasons__info--fullcolour {
-      width: 256px;
-
-    }
-
+  .reasons__info--fullcolour {
+    flex-basis: 256px;
   }
 
+  .reasons__header {
+    width: 495px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 
 
 @media (min-width: $desktop-width) {
+  .reasons__info--fullcolour {
+    flex-basis: 400px;
+  }
 
-
-    .reasons__item {
-      width: 33%;
-      }
-
-      .reasons__info--fullcolour {
-        width: 386px;
-
-      }
-    }
+}
 
 
 
 
-
-
-
-
+.reasons__info--fullcolour {
+  background-color: $main-color;
+  padding-top: 32px;
+  padding-bottom: 22px;
+}

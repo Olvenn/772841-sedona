@@ -1,10 +1,10 @@
 .feedback-form {
   @include mobile-container();
-  max-width: 280px;
+  margin: 0 auto;
+
 }
 
 .feedback-form__fieldset {
-  @include mobile-container();
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -17,27 +17,22 @@
   }
 }
 
-.feedback-form__input--text,
-.feedback-form__textarea,
-.feedback-form__label--checkbox,
-.feedback-form__textarea::placeholder,
-.feedback-form__input::placeholder,
-.feedback-form__label--radio {
+.feedback-form__input::placeholder {
   @include form-text();
   text-transform: none;
   color: $main-text-color;
 }
 
-
 .feedback-form__legend {
   @include headline();
-
   padding-top: 20px;
-  width: 280px;
 }
 
 .feedback-form__input--text,
 .feedback-form__textarea {
+  @include form-text();
+  text-transform: none;
+  color: $main-text-color;
   background-color: $input-main;
   border: none;
   box-sizing: border-box;
@@ -56,40 +51,34 @@
 }
 
 .feedback-form__input-wrapper {
-  width: 280px;
+  width: 100%;
+
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
   box-sizing: border-box;
 }
 
-.feedback-form__input--background {
-  width: 280px;
-}
 
-.feedback-form__icon--mail {
-  width: 280px;
-}
 
 .feedback-form__input-wrapper--contact {
-  width: 320px;
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
   box-sizing: border-box;
 }
 
 .feedback-form__input--text {
-  flex-grow: 1;
+  /*flex-grow: 1;*/
   box-sizing: border-box;
 }
 
 .feedback-form__icon {
   display: flex;
-  width: 280px;
+  justify-content: space-between;
 }
 
+/*не выравнивается по правому краю*/
 .feedback-form__icon::after {
   content: "";
   width: 58px;
@@ -114,6 +103,9 @@
 }
 
 .feedback-form__label--radio {
+  @include form-text();
+  text-transform: none;
+  color: $main-text-color;
   padding-left: 70px;
 }
 
@@ -173,11 +165,26 @@
   padding-bottom: 10px;
 }
 
-.feedback-form__label--checkbox {
-  padding-left: 70px;
+.feedback-form__label--checkbox,
+
+.feedback-form__input::placeholder,
+.feedback-form__label--radio {
+  @include form-text();
+  text-transform: none;
+  color: $main-text-color;
 }
 
-.feedback-form__label--checkbox::before {
+
+
+
+.feedback-form__label--checkbox {
+  @include form-text();
+  text-transform: none;
+  color: $main-text-color;
+  padding-left: 70px;
+
+
+  &::before {
   position: absolute;
   content: "";
   width: 56px;
@@ -188,6 +195,7 @@
   cursor: pointer;
   top: -5px;
   left: 0;
+}
 }
 
 .feedback-form__label--checkbox:hover::before {
@@ -225,9 +233,87 @@
   background-image: none;
 }
 
+
 .feedback-form__textarea {
-  width: 280px;
-  max-width: 280px;
   min-height: 160px;
   box-sizing: border-box;
+
+  &::placeholder {
+    @include form-text();
+    text-transform: none;
+    color: $main-text-color;
+  }
+}
+
+
+
+///tablet
+
+@media (min-width: $tablet-width) {
+
+  .feedback-form {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  .feedback-form__fieldset {
+    width: 50%;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+
+  .feedback-form__input-wrapper {
+    width: 100%;
+  }
+
+  .feedback-form__fieldset--impression {
+    order: -1;
+  }
+
+  .feedback-form__fieldset--contact {
+    width: 100%;
+  }
+
+  .feedback-form__input-wrapper--contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.feedback-form__input-wrapper {
+  justify-content: flex-start;
+  }
+
+
+.feedback-form__fieldset--sights {
+  width: 100%;
+}
+
+  .feedback-form__wrapper--sights {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback-form__input-wrapper--sights {
+    width: 50%;
+  }
+}
+
+
+///desktop
+
+@media (min-width: $desktop-width) {
+
+  .feedback-form__input-wrapper--sights {
+    width: 25%;
+  }
+
+  .feedback-form__wrapper--contact {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
