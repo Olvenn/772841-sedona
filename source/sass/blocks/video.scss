@@ -1,13 +1,14 @@
 .video {
-  width: 320px;
-
   @include mobile-container();
   border: none;
   padding-bottom: 100px;
+  width: 320px;
 }
 
-.video__header {
-  width: 320px;
+.video__picture {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .video__title {
@@ -20,4 +21,104 @@
 
 .video_presentation {
   position: relative;
+}
+
+
+
+/*conttols*/
+
+.video__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -45px;
+  width: 280px;
+  padding: 20px; 
+}
+
+.video__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+
+  width: 280px;
+
+}
+
+.video__item--progress {
+  width: 280px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
+}
+
+.video__item--progress span {
+  display: flex;
+  align-items: center;
+  width: 235px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 22px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.video__item--progress span::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 35px;
+  background-color: $bg;
+}
+
+.video__item--progress span:hover::after {
+  background-color: $form-border;
+}
+
+.video__item--progress span:focus::after,
+.video__item--progress span:active::after {
+  background-color: #c1c1c1;
+}
+
+.video__item--subtitles {
+  padding-left: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*conttols*/
+
+/// tablet
+
+@media (min-width: $tablet-width) {
+  .video {
+    width: 650px;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+  }
+
+}
+
+/// desktop
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 800px;
+
+  }
 }

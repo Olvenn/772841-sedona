@@ -42,6 +42,16 @@
     </header>
 
     <main class="page-main">
+
+        <div class="page-main_form-header">
+            <h1 class="visually-hidden">Форма для отзыва</h1>
+            <div class="page-main__header-picture--small">
+              <div class="page-main__header-picture--text-form">
+              <img class="page-main__header-picture__main" src="img/text-sedona.svg" alt="Добро пожаловать в Седону!">
+              </div>
+            </div>
+          </div>
+
       <section class="photo">
         <div class="photo__header">
           <h1 class="photo__caption page-main__main-headline">Фото и видео</h1>
@@ -110,18 +120,32 @@
           <p class="plain-text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video_presentation">
-          <img src="img/video-mobile@1x.jpg" alt="Video-player">
+          <picture>
+            <source srcset="img/video-desktop@1x.jpg 1x" media="(min-width: 1200px)">
+            <source srcset="img/video-tablet@1x.jpg 1x" media="(min-width: 768px)">
+            <img class="video__picture" src="img/video-mobile@1x.jpg" alt="Видео" width="320" height="201">
+          </picture>
           <div class="video__controls">
-            <div class="video__sound"></div>
-            <div class="video__line"></div>
-            <div class="video__circle-button"></div>
-            <div class="video__replay"></div>
-            <div class="video__cc"></div>
-            <div class="video__fullscreen"></div>
+            <div class="video__item video__item--progress">
+              <span></span>
+            </div>
+            <div class="video__buttons">
+            <div class="video__item video__item--replay">
+              <img class="video__item--replay--pic" src="img/icon-video-replay.svg" width="16" height="20" alt="Повторить">
+            </div>
+            <div class="video__item video__item--subtitles">
+              <img class="video__item--subtitles-pic" src="img/icon-video-subtitles.svg" alt="Добро пожаловать в Седону!">
+            </div>
+            <div class="video__item video__item--fullscreen">
+              <img class="video__item--fullscreen-pic" src="img/icon-video-fullscreen.svg"  width="32" height="20"  alt="Отобразить на весь экран">
+            </div>
+          </div>
           </div>
         </div>
       </section>
     </main>
+
+
     <footer class="page-footer">
       <p class="page-footer__hashtag">#visitsedona</p>
       <ul class="page-footer__social social">

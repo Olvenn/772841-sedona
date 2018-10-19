@@ -143,12 +143,15 @@
 
 
 @media (min-width: $desktop-width) {
+  
+
+  .reasons {
+    @include desktop-container();
+  }
+
   .reasons__info--fullcolour {
     flex-basis: 400px;
   }
-
-}
-
 
 
 
@@ -156,4 +159,5 @@
   background-color: $main-color;
   padding-top: 32px;
   padding-bottom: 22px;
+}
 }

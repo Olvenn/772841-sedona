@@ -308,6 +308,11 @@
 
 @media (min-width: $desktop-width) {
 
+  .feedback-form {
+  @include desktop-container();
+  width: 100%;
+  }
+
   .feedback-form__input-wrapper--sights {
     width: 25%;
   }
