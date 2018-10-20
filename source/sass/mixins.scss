@@ -16,6 +16,15 @@
   text-align: center;
 }
 
+@mixin subtitle() {
+  font-family: $base-font;
+  font-size: $text-size; /*14*/
+  line-height: $headline-height; /*26*/
+  color: $main-text-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 @mixin text-light() {
   font-family: $base-font;
   font-size: $text-size; /*14*/
@@ -35,7 +44,7 @@
 
 @mixin photo-description-text() {
   font-family: $bold-font;
-  font-size: $photo-title-size; /*21*/
+  font-size: $text-size; /*21*/
   line-height: $text-height-photo; /*24*/
   color: $main-text-color;
   text-transform: uppercase;

@@ -1,41 +1,35 @@
 /// mobile
 
 .reasons__header {
-  width: 320px;
-  /*padding-left: 20px;
-  padding-right: 20px;*/
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 40px;
-  padding-bottom: 40px;
+
   text-align: center;
   background-color: $bg;
   margin: 0 auto;
 }
 
 .reasons__subtitle {
-  @include text();
+  @include subtitle();
+}
+
+.reasons__subtitle-main {
   margin-top: 30px;
 }
 
 .reasons__list {
   @include list-style();
-
   background-color: $bg;
 }
-
-
 .reasons__item {
   text-align: center;
-  padding-top: 32px;
-  /*padding-right: 15px;
-  padding-left: 15px;*/
-  padding-bottom: 32px;
   box-sizing: border-box;
-
   &--advantage {
     background-color: #eeeeee;
-    padding-top: 32px;
+    padding-top: 15px;
     padding-right: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
     padding-left: 15px;
     border-bottom: 1px solid #d6d6d6;
 }
@@ -45,9 +39,13 @@
   }
 }
 
-.reasons__name,
-.reasons__text {
-  padding: 0;
+.reasons__item--accommodation {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.reasons__name {
+  text-align: center;
   line-height: 26px;
 
   &--detailed {
@@ -55,37 +53,48 @@
   }
 }
 
+.reasons__item--fullcolour {
+  margin-top: 32px;
+}
 
+.reasons__info--fullcolour {
+  background-color: $main-color;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 
+.reasons__text {
+  text-align: center;
+  line-height: 26px;
 
+  &--detailed {
+    color: $bg;
+  }
+}
 
-
-
-
-/// left
-.reasons__text,
-.reasons__name {
-  text-align: left;
-  padding-left: 50px;
+.reasons__item--town {
+  padding-left: 70px;
 }
 
 .reasons__name--town {
   text-align: left;
-  padding-left: 50px;
+  padding-top: 17px;
 }
 
-
-
-
-.reasons__text{
-  padding-bottom: 8px;
-}
-
-.reasons__subtitle--recommendation {
+.reasons__item--town p {
+  @include text();
+  width: 210px;
   text-align: left;
-  padding-left: 50px;
+  margin-top: 8px;
 }
 
+.reasons__item--advantage p{
+  width: 250px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+}
 .reasons__item--accommodation {
   background-image: url("../img/icon-house.svg");
   background-position: 20px 20px;
@@ -95,14 +104,14 @@
 
 .reasons__item--souvenirs {
   background-image: url("../img/icon-gift.svg");
-  background-position: 20px 20px;
+  background-position: 20px 0;
   background-repeat: no-repeat;
   background-size: 37px 37px;
 }
 
 .reasons__item--food {
   background-image: url("../img/icon-burger.svg");
-  background-position: 20px 20px;
+  background-position: 20px 0;
   background-repeat: no-repeat;
   background-size: 37px 37px;
 }
@@ -123,7 +132,6 @@
     display: flex;
     flex-wrap: wrap;
     border: none;
-
   }
 
   .reasons__item--fullcolour {
@@ -152,8 +160,3 @@
 
 
 
-.reasons__info--fullcolour {
-  background-color: $main-color;
-  padding-top: 32px;
-  padding-bottom: 22px;
-}

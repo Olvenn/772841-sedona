@@ -1,8 +1,5 @@
 .hotels {
-  @include mobile-content();
-  width: 320px;
-  padding-top: 132px;
-  padding-bottom: 48px;
+  @include mobile-container();
   text-align: center;
 }
 
@@ -12,11 +9,17 @@
 
 .hotels__description {
   @include text();
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hotels__search {
   display: block;
-  margin-top: 40px;
+  margin-top: 60px;
+}
+
+.hotels__search--button {
+  margin-bottom: 35px;
 }
 
 .hotels__map {

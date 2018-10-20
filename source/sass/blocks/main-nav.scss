@@ -14,6 +14,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+
 }
 
 /*
@@ -44,11 +45,12 @@
 
   @include headline();
   font-size: 18px;
-  height: 56px;
+  height: 55px;
   background-color: $main-color;
   line-height: 40px;
   text-align: center;
   padding: 0;
+  box-sizing: border-box;
   border-top: 1px solid $border-top-color;
   border-bottom: 1px solid $border-bottom-color;
 
@@ -125,7 +127,7 @@
   content: "";
   position: absolute;
   top: 15px;
-  left: 17px;
+  left: 18px;
   width: 36px;
   height: 2px;
   background-color: transparent;
@@ -147,8 +149,8 @@
     content: "";
     position: absolute;
     top: 28px;
-    left: 18px;
-    width: 36px;
+    left: 23px;
+    width: 28px;
     height: 2px;
     background-color: #ffffff;
   }

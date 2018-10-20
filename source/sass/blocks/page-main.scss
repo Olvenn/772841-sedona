@@ -1,10 +1,12 @@
 .page-main {
   @include mobile-container();
   max-width: 320px;
+  margin-top: -45px;
 }
 
 .page-main__main-headline {
   @include headline();
+
 }
 
 .page-main__main-headline--white {
@@ -17,6 +19,12 @@
   font-family: $base-font;
 }
 
+.page-main__plain-text {
+  @include text();
+
+}
+
+
 .page-main_form-header {
   width: 320px;
 }
@@ -28,14 +36,16 @@
 .page-main__header-picture {
   position: relative;
   min-height: 390px;
-  padding-top: 90px;
+
   background-color: $btn-hover-color;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom, center;
   background-size: 100%, cover;
   box-sizing: border-box;
-  margin-top: -40px;
+
+  padding-top: 90px;
+  margin-bottom: -16px;
 }
 
 .page-main__header-picture__main {
