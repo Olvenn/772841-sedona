@@ -1,8 +1,4 @@
 
-.feedback {
-  @include mobile-container();
-  margin: 0 auto;
-}
 
 .feedback__title {
   @include headline();
@@ -10,6 +6,8 @@
 
 .feedback__slogan {
   @include text();
+  padding: 10px;
+  line-height: 24px;
 }
 
 
