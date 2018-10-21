@@ -185,6 +185,10 @@
     justify-content: space-around;
   }
 
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__item {
     width: 20%;
     background-color: $bg;
