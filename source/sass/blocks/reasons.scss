@@ -129,7 +129,7 @@
 }
 
   .reasons__item {
-    width: 33.3%;
+    width: 256px;
     display: flex;
     flex-wrap: wrap;
     border: none;
@@ -154,6 +154,13 @@
 @media (min-width: $desktop-width) {
   .reasons__info--fullcolour {
     flex-basis: 400px;
+  }
+
+  .reasons__item {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
   }
 
 }

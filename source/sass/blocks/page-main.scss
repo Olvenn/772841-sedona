@@ -1,11 +1,6 @@
-.page-main {
-
-  margin-top: -45px;
-}
 
 .page-main__main-headline {
   @include headline();
-
 }
 
 .page-main__main-headline--white {
@@ -41,13 +36,13 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding-top: 90px;
-  margin-bottom: -16px;
+  margin-bottom: -18px;
 }
 
 
 
 .page-main__picture-small {
-  height: 159px;
+  height: 157px;
   position: relative;
   background-color: #f4b0a3;
   background-image: url("../img/bg-intro-triangle-mobile.svg"),
@@ -57,29 +52,13 @@
   background-position: bottom, center, center;
   background-size: 100%, 230px, cover;
   box-sizing: border-box;
-  margin-top: -40px;
+  margin-bottom: 38px;
 }
-
-
-
-
-
 
 
 ///tablet
 
 @media (min-width: $tablet-width) {
-  .page-main {
-    @include tablet-container();
-    max-width: 768px;
-
-    margin-top: -47px;
-  }
-    .page-main__form-header {
-      width: 100%;
-
-    }
-
     .page-main__header-picture {
       min-height: 519px;
       background-image: url("../img/bg-intro-triangle-mobile.svg"),
@@ -92,27 +71,20 @@
       margin-bottom: -16px;
     }
 
-
     .page-main__picture-small {
       height: 288px;
       background-image: url("../img/bg-intro-triangle-mobile.svg"),
       url("../img/text-sedona.svg"),
       url("../img/bg-back-tablet@1x.jpg");
       background-size: 100%, 461px, cover;
+      margin-bottom: 27px;
     }
-
-
-
   }
 
 
 ///desktop
 
 @media (min-width: $desktop-width) {
-  .page-main {
-    @include desktop-container();
-    max-width: 1200px;
-  }
 
   .page-main__header-picture {
     min-height: 519px;

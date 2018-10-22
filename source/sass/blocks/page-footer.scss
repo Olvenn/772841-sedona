@@ -1,5 +1,4 @@
 .page-footer {
-  @include mobile-container();
   background-color: $bg;
   width: 320px;
 
@@ -19,9 +18,10 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    @include tablet-container();
+    width: 100%;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -32,9 +32,3 @@
 
 /// desktop
 
-@media (min-width: $desktop-width) {
-  .page-footer {
-    @include desktop-container();
-
-  }
-}

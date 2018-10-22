@@ -15,19 +15,27 @@
 ///tablet
 
 @media (min-width: $tablet-width) {
-
-
   .feedback {
     @include tablet-container();
-
-
     }
 
+.feedback__title {
+  font-size: 30px;
+  padding-top: 47px;
+}
+
   .feedback__header {
-    width: 455px;
+    width: 446px;
     margin: 0 auto;
   }
+
+  .feedback__slogan {
+    width: 446px;
+    padding-bottom: 37px;
+
+  }
 }
+
 
 ///desktop
 

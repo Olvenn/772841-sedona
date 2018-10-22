@@ -6,7 +6,7 @@
   width: 320px;
   min-height: 56px;
   margin: 0 auto;
-  padding-bottom: 50px;
+
 }
 
 .main-nav__list {
@@ -177,7 +177,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    @include tablet-container();
+    width: 100%;
   }
 
     .main-nav__list {

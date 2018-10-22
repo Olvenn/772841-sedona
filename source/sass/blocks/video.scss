@@ -1,5 +1,4 @@
 .video {
-  @include mobile-container();
   border: none;
   padding-bottom: 100px;
   width: 320px;
@@ -35,7 +34,7 @@
   position: absolute;
   bottom: -45px;
   width: 280px;
-  padding: 20px; 
+  padding: 20px;
 }
 
 .video__buttons {
