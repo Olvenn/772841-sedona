@@ -59,7 +59,13 @@
 
         <div class="photo__gallary">
         <div class="photo__wrapper">
-          <img class="photo__img photo__img--big" src="img/photo-sunset-mobile@1x.jpg" alt="Народные просторы">
+
+            <picture>
+                <source srcset="img/photo-sunset-desktop@1x.jpg 1x" media="(min-width: 1200px)">
+                <source srcset="img/photo-sunset-tablet@1x.jpg 1x" media="(min-width: 768px)" >
+                <img class="photo__pic" src="img/photo-sunset-mobile@1x.jpg" alt="Дорога на закате">
+              </picture>
+
           <div class="photo__description">
             <div class="photo__text">
               <p class="photo__title">Народные просторы</p>
@@ -72,7 +78,11 @@
         </div>
 
         <div class="photo__wrapper">
-          <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+            <picture>
+                <source srcset="img/photo-cactus-desktop@1x.jpg 1x" media="(min-width: 1200px)">
+                <source srcset="img/photo-cactus-tablet@1x.jpg 1x">
+                <img class="photo__pic" src="img/photo-cactus-mobile@1x.jpg" alt="Необычный кактус" media="(min-width: 768px)">
+              </picture>
           <div class="photo__description">
             <div class="photo__text">
               <p class="photo__title">Местная растительность</p>
@@ -84,7 +94,11 @@
           </div>
         </div>
         <div class="photo__wrapper">
-          <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x">
+                <img class="photo__pic" src="img/photo-roads-mobile@1x.jpg" alt="Дорога в горах среди деревьев">
+              </picture>
           <div class="photo__description">
             <div class="photo__text">
               <p class="photo__title">Дорога на север</p>
@@ -97,7 +111,11 @@
         </div>
         <div class="photo__wrapper">
 
-          <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
+          <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x">
+              <img class="photo__pic" src="img/photo-bridge-mobile@1x.jpg" alt="Мост Дьявола">
+            </picture>
           <div class="photo__description">
             <div class="photo__text">
               <p class="photo__title">Мост дьявола</p>
@@ -118,29 +136,29 @@
         </div>
         <div class="video_presentation">
           <picture>
-            <source srcset="img/video-desktop@1x.jpg 1x" media="(min-width: 1200px)">
-            <source srcset="img/video-tablet@1x.jpg 1x" media="(min-width: 768px)">
-            <img class="video__picture" src="img/video-mobile@1x.jpg" alt="Видео" width="320" height="201">
+                  <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x">
+                  <img class="video__mock" src="img/video-mobile@1x.jpg" alt="Видео" width="320" height="201">
+                </picture>
           </picture>
           <div class="video__controls">
             <div class="video__item video__item--progress">
               <span></span>
             </div>
-            <div class="video__buttons">
+
             <div class="video__item video__item--replay">
               <img class="video__item--replay--pic" src="img/icon-video-replay.svg" width="16" height="20" alt="Повторить">
             </div>
             <div class="video__item video__item--subtitles">
-              <img class="video__item--subtitles-pic" src="img/icon-video-subtitles.svg" alt="Добро пожаловать в Седону!">
+              <img class="video__item--subtitles-pic" src="img/icon-video-subtitles.svg" width="16" height="20" alt="Добро пожаловать в Седону!">
             </div>
             <div class="video__item video__item--fullscreen">
               <img class="video__item--fullscreen-pic" src="img/icon-video-fullscreen.svg"  width="32" height="20"  alt="Отобразить на весь экран">
             </div>
-          </div>
+
           </div>
         </div>
-      </section>
-    </main>
+      </section>    </main>
 
 
     <footer class="page-footer">
