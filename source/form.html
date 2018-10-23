@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона - форма для отзыва</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,121 +14,136 @@
       <nav class="main-nav  main-nav--opened  main-nav--nojs">
         <button class="main-nav__toggle" type="button">
 
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
-          <ul class="main-nav__list">
-            <li class="main-nav__item  main-nav__item--active">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-          <a class="main-nav__logo">
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--active">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--logo">
+            <a class="main-nav__logo">
+              <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип города Sedona" />
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+        <!--<a class="main-nav__logo">
             <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип города Sedona" />
-          </a>
+          </a>-->
       </nav>
     </header>
 
     <main class="page-main">
-      <div class="main-form__header-picture">
+
+      <div class="page-main__form-header">
         <h1 class="visually-hidden">Форма для отзыва</h1>
-        <img class="main-formpicture" src="img/bg-back-mobile@1x.jpg" alt="Добро пожаловать в Седону!" width="1000" height="1000">
+        <div class="page-main__picture-small">
+
+        </div>
       </div>
 
       <section class="feedback">
-        <h2 class="feedback__title  page-main__main-headline">Оставьте свой отзыв</h2>
-        <p class="feedback__slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
-        </p>
+        <div class="feedback__header">
+          <h2 class="feedback__title  page-main__main-headline">Оставьте свой отзыв</h2>
+          <p class="feedback__slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
+            вами достопримечательностях
+          </p>
+        </div>
+
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="feedback-form__fieldset  feedback-form__fieldset--fullname">
-            <legend class="feedback-form__legend page-main__main-headline">
+            <legend class="feedback-form__legend feedback-form__legend--fullname page-main__main-headline">
               Представьтесь:
             </legend>
             <div class="feedback-form__input-wrapper">
               <label class="feedback-form__label feedback-form__label--text" for="name">Имя*:</label>
-              <input class="feedback-form__input feedback-form__input--text" id="name" type="text" name="name" placeholder="Пётр" required>
+              <input class="feedback-form__input feedback-form__input--text" id="name" type="text" name="name"
+                placeholder="Пётр" required>
             </div>
             <div class="feedback-form__input-wrapper">
               <label class="feedback-form__label feedback-form__label--text" for="lastname">Фамилия*:</label>
-              <input class="feedback-form__input feedback-form__input--text" id="lastname" type="text" name="lastname" placeholder="Иванов"
-                required>
+              <input class="feedback-form__input feedback-form__input--text" id="lastname" type="text" name="lastname"
+                placeholder="Иванов" required>
             </div>
             <div class="feedback-form__input-wrapper">
               <label class="feedback-form__label feedback-form__label--text" for="patronymic">Отчество:</label>
-              <input class="feedback-form__input feedback-form__input--text" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+              <input class="feedback-form__input feedback-form__input--text" id="patronymic" type="text" name="patronymic"
+                placeholder="Александрович">
             </div>
           </fieldset>
           <fieldset class="feedback-form__fieldset feedback-form__fieldset--contact">
             <legend class="feedback-form__legend page-main__main-headline">
               Контактная информация:
             </legend>
-            <div class="feedback-form__wrapper">
+            <div class="feedback-form__wrapper feedback-form__wrapper--contact">
               <div class="feedback-form__input-wrapper feedback-form__input-wrapper--contact">
                 <label class="feedback-form__label feedback-form__label--text" for="tel">Контактный телефон*:</label>
                 <div class="feedback-form__icon feedback-form__icon--tel">
-                  <input class="feedback-form__input feedback-form__input--text" id="tel" type="tel" name="tel" placeholder="Введите телефон"
-                    required>
+                  <input class="feedback-form__input feedback-form__input--text" id="tel" type="tel" name="tel"
+                    placeholder="Введите телефон" required>
                 </div>
               </div>
               <div class="feedback-form__input-wrapper feedback-form__input-wrapper--contact">
                 <label class="feedback-form__label feedback-form__label--text" for="email">Электронная почта*:</label>
                 <div class="feedback-form__icon feedback-form__icon--mail">
-                  <input class="feedback-form__input feedback-form__input--text" id="email" type="email" name="email" placeholder="Введите e-mail"
-                    required>
+                  <input class="feedback-form__input feedback-form__input--text" id="email" type="email" name="email"
+                    placeholder="Введите e-mail" required>
                 </div>
               </div>
             </div>
           </fieldset>
-          <fieldset class="feedback-form__fieldset feedback-form__fieldset--impression">
+          <fieldset class="feedback-form__fieldset  feedback-form__fieldset--impression">
             <legend class="feedback-form__legend page-main__main-headline">
               Ваше общее впечатление:
             </legend>
             <div class="feedback-form__input-wrapper feedback-form__input-wrapper--impression">
-              <input class="feedback-form__input feedback-form__input--radio visually-hidden" id="positive" type="radio" name="impression"
-                value="positive" checked>
+              <input class="feedback-form__input feedback-form__input--radio visually-hidden" id="positive" type="radio"
+                name="impression" value="positive" checked>
               <label class="feedback-form__label feedback-form__label--radio" for="positive">Скорее положительное</label>
             </div>
             <div class="feedback-form__input-wrapper feedback-form__input-wrapper--impression">
-              <input class="feedback-form__input feedback-form__input--radio visually-hidden" id="negative" type="radio" name="impression"
-                value="negative">
+              <input class="feedback-form__input feedback-form__input--radio visually-hidden" id="negative" type="radio"
+                name="impression" value="negative">
               <label class="feedback-form__label feedback-form__label--radio" for="negative">Скорее отрицательное</label>
             </div>
             <div class="feedback-form__input-wrapper feedback-form__input-wrapper--impression">
-              <input class="feedback-form__input feedback-form__input--radio visually-hidden" id="dont-know" type="radio" name="impression"
-                value="dont-know">
+              <input class="feedback-form__input feedback-form__input--radio visually-hidden" id="dont-know" type="radio"
+                name="impression" value="dont-know">
               <label class="feedback-form__label feedback-form__label--radio" for="dont-know">Затрудняюсь ответить</label>
             </div>
           </fieldset>
           <fieldset class="feedback-form__fieldset feedback-form__fieldset--sights">
             <legend class="feedback-form__legend page-main__main-headline">
-              Посещённые достопримечательности:
+              Посещённые <br> достопримечательности:
             </legend>
-            <div class="feedback-form__wrapper">
+            <div class="feedback-form__wrapper feedback-form__wrapper--sights">
               <div class="feedback-form__input-wrapper feedback-form__input-wrapper--sights">
-                <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="option1" type="checkbox" name="option1"
-                  checked>
+                <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="option1" type="checkbox"
+                  name="option1" checked>
                 <label class="feedback-form__label feedback-form__label--checkbox" for="option1">Мост Дьявола</label>
               </div>
               <div class="feedback-form__input-wrapper feedback-form__input-wrapper--sights">
-                <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="option2" type="checkbox" name="option2"
-                  checked>
+                <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="option2" type="checkbox"
+                  name="option2" checked>
                 <label class="feedback-form__label feedback-form__label--checkbox" for="option2">Гора-Колокол</label>
               </div>
               <div class="feedback-form__input-wrapper feedback-form__input-wrapper--sights">
-                <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="option4" type="checkbox" name="option3"
-                  checked>
+                <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="option4" type="checkbox"
+                  name="option3" checked>
                 <label class="feedback-form__label feedback-form__label--checkbox" for="option4">Слайд-парк</label>
               </div>
               <div class="feedback-form__input-wrapper feedback-form__input-wrapper--sights">
-                <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="option3" type="checkbox" name="option4">
+                <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" id="option3" type="checkbox"
+                  name="option4">
                 <label class="feedback-form__label feedback-form__label--checkbox" for="option3">Красные скалы</label>
               </div>
             </div>
@@ -136,12 +152,13 @@
             <legend class="feedback-form__legend page-main__main-headline">
               Опишите свои эмоции:
             </legend>
-            <textarea class="feedback-form__textarea" cols="30" rows="10" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="feedback-form__textarea" cols="30" rows="2" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
             <div class="feedback-form__buttom">
               <button class="feedback-form__submit button" type="submit">Отправить отзыв</button>
             </div>
           </fieldset>
         </form>
+
       </section>
     </main>
 

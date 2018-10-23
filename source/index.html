@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,52 +14,61 @@
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-nav  main-nav--opened  main-nav--nojs">
+
         <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--active">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--logo">
+            <a class="main-nav__logo">
+              <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип города Sedona" />
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
 
-          <ul class="main-nav__list">
-            <li class="main-nav__item  main-nav__item--active">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-          <a class="main-nav__logo">
-            <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип города Sedona" />
-          </a>
+
       </nav>
     </header>
 
 
     <main class="page-main">
-      <div class="header-picture">
-        <img class="header-picture__main" src="img/bg-back-mobile@1x.jpg" alt="Добро пожаловать в Седону!" width="1000" height="1000">
+      <div class="page-main__header-picture">
+
       </div>
       <h1 class="visually-hidden">Wellcome to Sedona!</h1>
       <section class="reasons">
         <header class="reasons__header">
           <h2 class="reasons__title page-main__main-headline">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <div class="reasons__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</div>
+          <p class="reasons__subtitle reasons__subtitle-main">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </header>
+
         <ul class="reasons__list">
 
-          <li class="reasons__item">
+          <li class="reasons__item reasons__item--fullcolour">
             <div class="reasons__info reasons__info--fullcolour">
               <div class="reasons__name page-main__main-headline page-main__main-headline--white">Настоящий городок</div>
               <p class="reasons__number-white page-main__plain-text--white">&mdash; №1 &mdash;</p>
               <p class="reasons__subtitle-white page-main__plain-text--white">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <div>
-              <img class="reasons__pic" src="img/main-city-mobile@1x.jpg" alt="Городок Седона">
+            <div class="reasons__picture">
+              <picture>
+                <source srcset="img/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
+                <source srcset="img/main-city-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="reasons__pic" src="img/main-city-mobile@1x.jpg" alt="Городок Седона">
+              </picture>
             </div>
           </li>
 
@@ -78,14 +90,18 @@
 
 
 
-          <li class="reasons__item">
+          <li class="reasons__item reasons__item--fullcolour">
             <div class="reasons__info page-main__main-headline reasons__info--fullcolour">
               <div class="reasons__name page-main__main-headline page-main__main-headline--white">Там есть мост дьявола</div>
               <p class="reasons__number-white page-main__plain-text--white">&mdash; №2 &mdash;</p>
               <p class="reasons__subtitle-white page-main__plain-text--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div>
-              <img class="reasons__pic" src="img/main-bridge-mobile@1x.jpg" alt="Городок Седона">
+              <picture  class="reasons__picture">
+                <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
+                <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="reasons__pic" src="img/main-bridge-mobile@1x.jpg" alt="Городок Седона">
+              </picture>
             </div>
           </li>
           <li class="reasons__item reasons__item--advantage">
@@ -105,17 +121,19 @@
           </li>
         </ul>
       </section>
+
       <section class="hotels">
         <header class="hotels__header">
           <h2 class="visually-hidden">Поиск гостинницы в Седоне</h2>
-          <p class="hotels__title hotels__title page-main__main-headline">Заинтересовались?</p>
+          <p class="hotels__title page-main__main-headline">Заинтересовались?</p>
           <p class="hotels__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </header>
-        <a class="hotels__search button" href="#">Найти гостинницу</a>
-        <map class="hotels__map" name="sedona-map">
+        <a class="hotels__search button hotels__search--button" href="#">Найти гостинницу</a>
+        <div class="hotels__map">
           <h3 class="visually-hidden">Карта Седоны</h3>
-        </map>
+        </div>
       </section>
+
     </main>
     <footer class="page-footer">
       <p class="page-footer__hashtag">#visitsedona</p>

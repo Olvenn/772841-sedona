@@ -6,26 +6,15 @@
   width: 320px;
   min-height: 56px;
   margin: 0 auto;
+
 }
 
 .main-nav__list {
-  width: 100%;
-
   @include list-style();
-}
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-
-.main-nav__logo {
-  max-width: 52px;
-}
-
-
-.main-nav__item--logo {
-  display: block;
-}
-
-.main-nav__logo-img {
-  max-width: 102px;
 }
 
 /*
@@ -36,14 +25,6 @@
 }
 */
 
-.main-nav__switch {
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  padding: 0;
-  background: none;
-  border: none;
-}
 
 .main-nav__button {
   width: 23px;
@@ -64,11 +45,12 @@
 
   @include headline();
   font-size: 18px;
-  height: 56px;
+  height: 55px;
   background-color: $main-color;
   line-height: 40px;
   text-align: center;
   padding: 0;
+  box-sizing: border-box;
   border-top: 1px solid $border-top-color;
   border-bottom: 1px solid $border-bottom-color;
 
@@ -92,15 +74,32 @@
 
 .main-nav__item a {
   display: block;
-  padding: 10px;
+  padding: 5px;
   color: $bg;
   text-decoration: none;
+}
+/*Почему main-nav__item--logo a срабатывает padding: 0px;,
+а main-nav__logo нет?*/
+.main-nav__item--logo a {
+  display: block;
+  padding: 0px;
+  background-color: $bg;
+}
+
+.main-nav__item--logo {
+  order: 4;
+}
+
+.main-nav__logo-img {
+  max-width: 102px;
 }
 
 .main-nav__item:focus a,
 .main-nav__item:active a {
   color: rgba($bg, 0.3);
 }
+
+/*кнопка*/
 
 .main-nav__toggle {
   position: absolute;
@@ -128,7 +127,7 @@
   content: "";
   position: absolute;
   top: 15px;
-  left: 17px;
+  left: 18px;
   width: 36px;
   height: 2px;
   background-color: transparent;
@@ -150,8 +149,8 @@
     content: "";
     position: absolute;
     top: 28px;
-    left: 18px;
-    width: 36px;
+    left: 23px;
+    width: 28px;
     height: 2px;
     background-color: #ffffff;
   }
@@ -168,5 +167,68 @@
   &:active::before,
   &:active::after {
     background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/*кнопка*/
+
+
+///tablet
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 100%;
+  }
+
+    .main-nav__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__item {
+    @include headline();
+    font-size: 14px;
+    line-height: 26px;
+    width: 20%;
+    background-color: $bg;
+    line-height: 40px;
+    border: none;
+
+    &:hover {
+      background-color: $bg;
+    }
+
+    &:focus,
+    &:active {
+      background-color:  $bg;
+    }
+  }
+
+  .main-nav__item a {
+    color: $main-text-color;
+
+    &:hover {
+      color: #88b6d1;
+    }
+
+    &:focus,
+    &:active {
+      color:  $text-down-color;
+    }
+  }
+
+  .main-nav__item--logo {
+    order: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .main-nav {
+    @include desktop-container();
   }
 }

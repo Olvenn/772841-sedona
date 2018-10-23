@@ -1,49 +1,121 @@
-.photo__header {
-  width: 320px;
-  margin: 0 auto;
+.photo {
+  margin-top: 40px;
 }
 
 .photo__wrapper {
-  @include mobile-container();
   border-top: 1px solid $form-border;
-  padding-top: 10px;
+  padding-top: 22px;
+
 
   &:last-child {
     border-bottom: 1px solid $form-border;
   }
 }
 
-.main-headline {
-  @include headline();
+.photo__header {
+  margin: 0 auto;
 }
 
-.plain-text {
+.photo__subtitle {
   @include text();
-  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  line-height: 26px;
 }
 
 .photo__author {
   @include photo-description-text();
   padding-top: 3px;
-  padding-bottom: 10px;
+
   font-family: "PT Sans", sans-serif;
-  margin: 0;
+  margin-top: -18px;
   color: $main-text-color;
   text-transform: none;
 }
 
-.photo__title,
-.photo__sum-likes {
+.photo__title {
   @include photo-description-text();
-  padding-top: 10px;
-  padding-bottom: 10px;
+
 }
 
+
 .photo__sum-likes {
-  padding-left: 42px;
+  @include photo-description-text();
+  padding-left: 35px;
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
   background-size: 22px;
-  background-position: 1px 1px;/*?*/
   box-sizing: border-box;
+  margin-top: -6px;
 }
+
+
+@media (min-width: $tablet-width) {
+
+  .photo {
+    width: 100%;
+  }
+
+  .photo__header {
+    width: 435px;
+    background-color: $bg;
+  }
+
+
+  .photo__gallary {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo__wrapper {
+    flex-basis: 50%;
+    border: none;
+
+    &:first-child {
+      flex-basis: 100%;
+    }
+  }
+
+  .photo__description {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $input-main;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+  @media (min-width: $desktop-width) {
+
+    .photo {
+      @include desktop-container();
+    }
+
+    .photo {
+      width: 100%;
+    }
+
+    .photo__wrapper {
+      position: relative;
+    }
+
+    .photo__description {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .photo__wrapper {
+      flex-basis: 33%;
+      border: none;
+
+      &:first-child {
+        flex-basis: 100%;
+      }
+    }
+
+  }

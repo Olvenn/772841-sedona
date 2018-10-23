@@ -1,5 +1,4 @@
 .page-footer {
-  @include mobile-container();
   background-color: $bg;
   width: 320px;
 
@@ -7,10 +6,29 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 37px;
+  padding-top: 20px;
   text-align: center;
 }
 
 .page-footer__hashtag {
   @include headline();
 }
+
+/// tablet
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+}
+
+
+/// desktop
+

@@ -1,9 +1,4 @@
-.main-form,
-.feedback,
-.header-picture {
-  @include mobile-container();
-  max-width: 280px;
-}
+
 
 .feedback__title {
   @include headline();
@@ -11,4 +6,41 @@
 
 .feedback__slogan {
   @include text();
+  padding: 10px;
+  line-height: 24px;
+}
+
+
+
+///tablet
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    @include tablet-container();
+    }
+
+.feedback__title {
+  font-size: 30px;
+  padding-top: 47px;
+}
+
+  .feedback__header {
+    width: 446px;
+    margin: 0 auto;
+  }
+
+  .feedback__slogan {
+    width: 446px;
+    padding-bottom: 37px;
+
+  }
+}
+
+
+///desktop
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    @include desktop-container();
+  }
 }
