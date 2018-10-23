@@ -61,30 +61,31 @@
 
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="feedback-form__fieldset  feedback-form__fieldset--fullname">
-            <legend class="feedback-form__legend feedback-form__legend--fullname page-main__main-headline">
+            <legend class="feedback-form__legend     feedback-form__legend--fullname     page-main__main-headline">
               Представьтесь:
             </legend>
-            <div class="feedback-form__input-wrapper">
+            <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
               <label class="feedback-form__label feedback-form__label--text" for="name">Имя*:</label>
               <input class="feedback-form__input feedback-form__input--text" id="name" type="text" name="name"
                 placeholder="Пётр" required>
             </div>
-            <div class="feedback-form__input-wrapper">
+            <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
               <label class="feedback-form__label feedback-form__label--text" for="lastname">Фамилия*:</label>
               <input class="feedback-form__input feedback-form__input--text" id="lastname" type="text" name="lastname"
                 placeholder="Иванов" required>
             </div>
-            <div class="feedback-form__input-wrapper">
+            <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
               <label class="feedback-form__label feedback-form__label--text" for="patronymic">Отчество:</label>
               <input class="feedback-form__input feedback-form__input--text" id="patronymic" type="text" name="patronymic"
                 placeholder="Александрович">
             </div>
           </fieldset>
+
           <fieldset class="feedback-form__fieldset feedback-form__fieldset--contact">
             <legend class="feedback-form__legend page-main__main-headline">
               Контактная информация:
             </legend>
-            <div class="feedback-form__wrapper feedback-form__wrapper--contact">
+            <div class="feedback-form__wrapper     feedback-form__wrapper--contact     ">
               <div class="feedback-form__input-wrapper feedback-form__input-wrapper--contact">
                 <label class="feedback-form__label feedback-form__label--text" for="tel">Контактный телефон*:</label>
                 <div class="feedback-form__icon feedback-form__icon--tel">
@@ -101,6 +102,7 @@
               </div>
             </div>
           </fieldset>
+
           <fieldset class="feedback-form__fieldset  feedback-form__fieldset--impression">
             <legend class="feedback-form__legend page-main__main-headline">
               Ваше общее впечатление:
@@ -152,9 +154,10 @@
             <legend class="feedback-form__legend page-main__main-headline">
               Опишите свои эмоции:
             </legend>
-            <textarea class="feedback-form__textarea" cols="30" rows="2" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="feedback-form__textarea" cols="20" rows="3ы" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
             <div class="feedback-form__buttom">
               <button class="feedback-form__submit button" type="submit">Отправить отзыв</button>
+              <p class="form__required plain-text">* &mdash; обязательные поля</p>
             </div>
           </fieldset>
         </form>
