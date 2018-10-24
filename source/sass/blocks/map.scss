@@ -3,13 +3,13 @@
   width: 100%;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: $tablet-width) {
   .map {
     height: 355px;
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: $desktop-width) {
   .map {
     height: 326px;
   }

@@ -1,7 +1,11 @@
 
+.feedback__header {
+  margin-top: 39px;
+}
 
 .feedback__title {
   @include headline();
+
 }
 
 .feedback__slogan {
@@ -17,6 +21,7 @@
 @media (min-width: $tablet-width) {
   .feedback {
     @include tablet-container();
+    margin-top: -50px;
     }
 
 .feedback__title {

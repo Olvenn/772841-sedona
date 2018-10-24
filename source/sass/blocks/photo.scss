@@ -1,11 +1,13 @@
 .photo {
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 40px;
+  padding-bottom: 20px;
 }
 
 .photo__wrapper {
   border-top: 1px solid $form-border;
   padding-top: 22px;
-
 
   &:last-child {
     border-bottom: 1px solid $form-border;
@@ -16,23 +18,25 @@
   margin: 0 auto;
 }
 
+
 .photo__subtitle {
   @include text();
+  padding-top: 8px;
  /* padding-left: 25px;
   padding-right: 25px;
-  padding-top: 8px;
+
   padding-bottom: 10px;*/
+  padding-bottom: 10px;
   line-height: 26px;
 }
 
 .photo__author {
   @include photo-description-text();
-  padding-top: 3px;
-
   font-family: "PT Sans", sans-serif;
-  margin-top: -18px;
+  margin-top: -14px;
   color: $main-text-color;
   text-transform: none;
+  margin-bottom: -6px;
 }
 
 .photo__title {
@@ -48,7 +52,7 @@
   background-repeat: no-repeat;
   background-size: 22px;
   box-sizing: border-box;
-  margin-top: -6px;
+  /*margin-top: -6px;*/
 }
 
 
@@ -58,29 +62,41 @@
     width: 648px;
     padding: 0;
     margin: 0 auto;
+    padding-bottom: 33px;
   }
+
+  .photo__caption {
+    font-size: 30px;
+    }
 
   .photo__header {
     width: 435px;
-    background-color: $bg;
   }
 
+  .photo__subtitle {
+    padding-bottom: 55px;
+  }
 
   .photo__gallary {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-top: -4px;
   }
 
   .photo__wrapper {
-    flex-basis: 50%;
+    flex-basis: 324px;
     border: none;
-    padding:0;
+    padding: 0;
+    align-items: center;
+
+
 
     &:first-child {
       flex-basis: 100%;
     }
   }
+
 
   .photo__description {
     display: flex;
@@ -92,7 +108,16 @@
     background-color: $input-main;
     padding: 0 20px;
     box-sizing: border-box;
+    margin-top: -6px;
+
   }
+
+    .photo__text {
+      margin-top: -20px;
+    }
+
+
+
 }
 
 
@@ -108,20 +133,20 @@
 
     .photo__description {
       position: absolute;
-      bottom: 0;
+      bottom: 4px;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.3);
       color: $bg;
     }
 
     .photo__description p {
-
       color: $bg;
     }
 
     .photo__wrapper {
-      flex-basis: 33%;
+      flex-basis: 400px;
       border: none;
+      margin-top: -4px;
 
       &:first-child {
         flex-basis: 100%;

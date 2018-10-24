@@ -45,9 +45,10 @@
 
 
     <main class="page-main">
-      <div class="page-main__header-picture">
 
-      </div>
+      <div class="page-main__header-picture">
+          <img class="page-header__promo-pic" src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону!">
+     </div>
       <h1 class="visually-hidden">Wellcome to Sedona!</h1>
       <section class="reasons">
         <header class="reasons__header">
@@ -57,8 +58,9 @@
 
         <ul class="reasons__list">
 
-          <li class="reasons__item reasons__item--fullcolour">
-            <div class="reasons__info reasons__info--fullcolour">
+          <li class="reasons__item reasons__item--fullcolour reasons__item--fullcolour-first">
+            <div class="top"></div>
+            <div class="reasons__info reasons__info--fullcolour reasons__info--fullcolour-first">
               <div class="reasons__name page-main__main-headline page-main__main-headline--white">Настоящий городок</div>
               <p class="reasons__number-white page-main__plain-text--white">&mdash; №1 &mdash;</p>
               <p class="reasons__subtitle-white page-main__plain-text--white">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
@@ -81,7 +83,7 @@
           <li class="reasons__item reasons__item--town reasons__item--souvenirs">
             <div class="reasons__souvenirs"></div>
             <div class="reasons__name page-main__main-headline reasons__name--town">Сувениры</div>
-            <p class="reasons__subtitle reasons__subtitle--recommendation">Не только китайского, но и местного производства!</p>
+            <p class="reasons__subtitle reasons__subtitle--recommendation">Не только китайского, <br> но и местного производства!</p>
           </li>
 
 
@@ -93,13 +95,13 @@
 
 
 
-          <li class="reasons__item reasons__item--fullcolour">
-            <div class="reasons__info page-main__main-headline reasons__info--fullcolour">
-              <div class="reasons__name page-main__main-headline page-main__main-headline--white">Там есть мост дьявола</div>
+          <li class="reasons__item reasons__item--fullcolour reasons__item--fullcolour-last">
+            <div class="reasons__info page-main__main-headline reasons__info--fullcolour reasons__info--fullcolour-last">
+              <div class="reasons__name page-main__main-headline page-main__main-headline--white">Там есть <br> мост дьявола</div>
               <p class="reasons__number-white page-main__plain-text--white">&mdash; №2 &mdash;</p>
-              <p class="reasons__subtitle-white page-main__plain-text--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="reasons__subtitle-white page-main__plain-text--white">Да, по нему можно пройти!  <br> Если вы осмелитесь, конечно</p>
             </div>
-            <div>
+            <div class="change">
               <picture  class="reasons__picture">
                 <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
                 <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
@@ -129,7 +131,7 @@
         <header class="hotels__header">
           <h2 class="visually-hidden">Поиск гостинницы в Седоне</h2>
           <p class="hotels__title page-main__main-headline">Заинтересовались?</p>
-          <p class="hotels__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="hotels__description">Укажите предполагаемые даты поездки, <br class="hyphenate"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </header>
         <a class="hotels__search button hotels__search--button" href="#">Найти гостинницу</a>
         <div class="hotels__map">
