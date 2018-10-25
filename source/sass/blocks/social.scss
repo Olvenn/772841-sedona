@@ -1,10 +1,10 @@
 .social {
-  display: flex;
-
   @include list-style();
+  display: flex;
   margin: 40px 0;
   margin-top: 20px;
   margin-bottom: 28px;
+  list-style: none;
 }
 
 .social__link {
@@ -14,7 +14,17 @@
   margin-right: 6px;
   background-color: #81b3d2;
   vertical-align: middle;
+
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $btn-down-color;
+  }
 }
+
 
 .social__link:first-child {
   margin-left: 0;
@@ -25,6 +35,11 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 20px 20px;
+
+  &:focus,
+  &:active {
+    background-image: url("../img/icon-twitter_down.svg");;
+  }
 }
 
 .social__link--facebook {
@@ -32,6 +47,11 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 20px 20px;
+
+  &:focus,
+  &:active {
+    background-image: url("../img/icon-facebook_down.svg");;
+  }
 }
 
 .social__link--youtube {
@@ -39,4 +59,23 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 20px 20px;
+
+  &:focus,
+  &:active {
+    background-image: url("../img/icon-youtube_down.svg");;
+  }
 }
+
+
+
+.copyright__svg {
+  display: block;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 40px;
+  height: 45px;
+
+  fill: red;
+}
+
+
