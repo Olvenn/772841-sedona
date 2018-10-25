@@ -36,9 +36,6 @@
             <a href="#">HTML Academy</a>
           </li>
         </ul>
-        <!--<a class="main-nav__logo">
-            <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип города Sedona" />
-          </a>-->
       </nav>
     </header>
 
@@ -47,7 +44,7 @@
       <div class="page-main__form-header">
         <h1 class="visually-hidden">Форма для отзыва</h1>
         <div class="page-main__picture-small">
-
+          <img class="page-main_pic-small" src="img/text-sedona.svg" alt="Пейзаж Седоны" width="228" height="40">
         </div>
       </div>
 
@@ -60,8 +57,8 @@
         </div>
 
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="feedback-form__fieldset  feedback-form__fieldset--fullname">
-            <legend class="feedback-form__legend     feedback-form__legend--fullname     page-main__main-headline">
+          <fieldset class="feedback-form__fieldset feedback-form__fieldset--fullname">
+            <legend class="feedback-form__legend feedback-form__legend--fullname page-main__main-headline">
               Представьтесь:
             </legend>
             <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
@@ -82,12 +79,13 @@
           </fieldset>
 
           <fieldset class="feedback-form__fieldset feedback-form__fieldset--contact">
-            <legend class="feedback-form__legend page-main__main-headline">
+            <legend class="feedback-form feedback-form__legend page-main__main-headline">
               Контактная информация:
             </legend>
-            <div class="feedback-form__wrapper     feedback-form__wrapper--contact     ">
-              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--contacts">
-                <label class="feedback-form__label feedback-form__label--text" for="tel">Контактный телефон*:</label>
+            <div class="feedback-form__wrapper feedback-form__wrapper--contact">
+              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--contact">
+                <label class="feedback-form__label feedback-form__label--text" for="tel"><span class="invisible">Контактный</span>
+                  телефон*:</label>
                 <div class="feedback-form__icon feedback-form__icon--tel">
                   <input class="feedback-form__input feedback-form__input--text" id="tel" type="tel" name="tel"
                     placeholder="Введите телефон" required>

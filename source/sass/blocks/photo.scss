@@ -63,6 +63,7 @@
     padding: 0;
     margin: 0 auto;
     padding-bottom: 33px;
+    margin-top: 70px;
   }
 
   .photo__caption {
@@ -125,10 +126,15 @@
 
     .photo {
       width: 100%;
+      margin-top: 110px;
     }
 
     .photo__wrapper {
       position: relative;
+    }
+
+    .photo__header {
+      margin-bottom: 22px;
     }
 
     .photo__description {

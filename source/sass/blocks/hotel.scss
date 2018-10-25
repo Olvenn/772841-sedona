@@ -1,6 +1,6 @@
 .hotels {
   text-align: center;
-
+  margin-top: -40px;
 }
 
 .hotels__title {
@@ -66,10 +66,20 @@
   .hotels {
       width: 648px;
       margin: 0 auto;
+      margin-bottom: -13px;
+    }
+
+    .hotels__description {
+      padding-bottom: 30px;
     }
 
     .hotels__title {
       font-size: 30px;
+    }
+
+    .hotels__search {
+      width: 450px;
+      margin-bottom: 62px;
     }
 
     .hyphenate {
@@ -82,6 +92,7 @@
   }
 
 }
+
   @media (min-width: $desktop-width) {
 
   .hotels {

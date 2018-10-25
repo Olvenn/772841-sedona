@@ -20,8 +20,8 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
-    @include tablet-container();
-    margin-top: -50px;
+    margin-top: 25px;
+    margin-bottom: 58px;
     }
 
 .feedback__title {
@@ -46,6 +46,8 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
-    @include desktop-container();
+
+    margin-top: 64px;
+    margin-bottom: 58px;
   }
 }

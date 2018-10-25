@@ -6,7 +6,7 @@
   width: 320px;
   min-height: 56px;
   margin: 0 auto;
-
+  z-index: 10;
 }
 
 .main-nav__list {
@@ -17,6 +17,10 @@
 
 }
 
+
+.main-nav__logo {
+  display: block;
+}
 /*
 .main-nav__logo-img {
   width: 320px;
@@ -62,6 +66,11 @@
     border-bottom: none;
   }
 
+  &:nth-child(3) {
+    background-color: transparent;
+  }
+
+
   &:hover {
     background-color: $btn-hover-color;
   }
@@ -83,7 +92,7 @@
 .main-nav__item--logo a {
   display: block;
   padding: 0px;
-  background-color: $bg;
+  background-color: transparent;
 }
 
 .main-nav__item--logo {
