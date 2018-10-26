@@ -47,12 +47,19 @@
 
 .photo__sum-likes {
   @include photo-description-text();
-  padding-left: 35px;
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-size: 22px;
-  box-sizing: border-box;
-  /*margin-top: -6px;*/
+}
+
+.photo-like-icon {
+  width: 22px;
+  height: 20px;
+  margin-right: 10px;
+  fill: #b2b2b2;
+}
+
+.photo__like {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 
@@ -145,8 +152,13 @@
       color: $bg;
     }
 
-    .photo__description p {
+    .photo__description p,
+    .photo__description span{
       color: $bg;
+    }
+
+    .photo-like-icon {
+      fill: $bg;
     }
 
     .photo__wrapper {

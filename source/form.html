@@ -9,11 +9,18 @@
 </head>
 
 <body>
+  <svg style="display:none">
+    <symbol viewBox="0 0 60 60" id="htmlacademy">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" /></svg>
+    </symbol>
+  </svg>
+
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-nav  main-nav--opened  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
 
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
@@ -77,7 +84,6 @@
                 placeholder="Александрович">
             </div>
           </fieldset>
-
           <fieldset class="feedback-form__fieldset feedback-form__fieldset--contact">
             <legend class="feedback-form feedback-form__legend page-main__main-headline">
               Контактная информация:
@@ -100,7 +106,6 @@
               </div>
             </div>
           </fieldset>
-
           <fieldset class="feedback-form__fieldset  feedback-form__fieldset--impression">
             <legend class="feedback-form__legend page-main__main-headline">
               Ваше общее впечатление:
@@ -155,34 +160,57 @@
             <textarea class="feedback-form__textarea" cols="20" rows="3ы" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
             <div class="feedback-form__buttom">
               <button class="feedback-form__submit button" type="submit">Отправить отзыв</button>
-              <p class="form__required plain-text">* &mdash; обязательные поля</p>
+              <p class="feedback-form__required plain-text">* &mdash; обязательные поля</p>
             </div>
           </fieldset>
         </form>
 
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <p class="page-footer__hashtag">#visitsedona</p>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#"></a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="">
-          <svg class="copyright__logo" width="40" height="60"></svg>
-        </a>
+  </div class="popup">
+  <div class="popup__wrapper popup__wrapper--closed">
+    <div class="popup__form popup popup__form--failure">
+      <b class="popup__headline page-main__main-headline">Что-то пошло не так!</b>
+      <p class="popup__subtitle page-main__plain-text">Проверьте поля, выделенные красным: скорее всего, вы забыли их
+        заполнить</p>
+      <button class="popup__button button" type="button">ОК</button>
+    </div>
+  </div>
+  <div class="popup__wrapper popup__wrapper--closed">
+    <div class="popup__form popup popup--success">
+      <div class="popup__text">
+        <b class="popup__headline page-main__main-headline">Ваш отзыв отправлен!</b>
+        <p class="popup__subtitle page-main__plain-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+          В ближайшее время мы опубликуем его на сайте.</p>
       </div>
-    </footer>
+      <div class="popup__close-window">
+        <button class="popup__button button" type="button">Закрыть окно</button>
+      </div>
+    </div>
+  </div>
+  </section>
+  </main>
+
+  <footer class="page-footer">
+    <p class="page-footer__hashtag">#visitsedona</p>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#"></a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="" target="_blank">
+        <svg class="copyright__svg" width="27" height="34">
+          <use xlink:href="#htmlacademy"></use></svg>
+      </a>
+
+    </div>
+  </footer>
   </div>
 </body>
 

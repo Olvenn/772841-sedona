@@ -1,13 +1,13 @@
 .page-footer {
-  background-color: $bg;
   width: 320px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  background-color: $bg;
   text-align: center;
+  margin: 0 auto;
 }
 
 .page-footer__hashtag {

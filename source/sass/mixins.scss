@@ -78,8 +78,7 @@
 @mixin mobile-container() {
   width: 320px;
   margin: 0 auto;
-
-}
+  }
 
 @mixin mobile-content() {
   width: 320px;

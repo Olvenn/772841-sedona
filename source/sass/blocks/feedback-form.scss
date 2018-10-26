@@ -32,7 +32,6 @@
   box-sizing: border-box;
   padding: 17px 20px;
 
-
   &:hover {
     background-color: $input-main-hover;
   }
@@ -48,8 +47,6 @@
 .feedback-form__label--text {
   padding-right: 10px;
 }
-
-/**/
 
 .feedback-form__icon {
   display: flex;
@@ -122,10 +119,6 @@
 .feedback-form__icon--mail {
   padding-top: 10px;
 }
-/*
-.feedback-form__fieldset--impression {
-  padding-left: 20px;
-}*/
 
 .feedback-form__input-wrapper--impression {
   flex-direction: column;
@@ -237,7 +230,7 @@
   cursor: pointer;
   top: 0;
   left: 7px;
-}
+  }
 }
 
 .feedback-form__label--checkbox:hover::before {
@@ -275,7 +268,6 @@
   background-image: none;
 }
 
-
 .feedback-form__textarea {
   width: 280px;
   min-height: 160px;
@@ -290,12 +282,14 @@
   }
 }
 
+.feedback-form__required {
+  display: none;
+}
 
 
 ///tablet
 
 @media (min-width: $tablet-width) {
-
   .feedback-form {
     max-width: 648px;
     display: flex;
@@ -347,24 +341,24 @@
 
   .feedback-form__fieldset--impression .feedback-form__legend {
     text-align: left;
-
   }
 
   .feedback-form__label--radio::before {
     top: 5px;
     left: 0;
   }
-    .feedback-form__fieldset--sights .feedback-form__legend {
-      padding-bottom: 45px;
-    }
 
-    .feedback-form__wrapper--sights {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding-left: 90px;
-      padding-right: 45px;
-    }
+  .feedback-form__fieldset--sights .feedback-form__legend {
+    padding-bottom: 45px;
+  }
+
+  .feedback-form__wrapper--sights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-right: 45px;
+  }
 
   .feedback-form__fieldset--sights {
     width: 100%;
@@ -373,16 +367,12 @@
 
   .feedback-form__input-wrapper--sights {
     width: 50%;
-
   }
 
   .feedback-form__wrapper--contact {
     margin-bottom: 5px;
     margin-top: 25px;
   }
-/*
-  .feedback-form__wrapper--contact .feedback-form__input::placeholder {
-    width: 700px  }*/
 
   .feedback-form__fieldset--contact:nth-child(2) {
     margin-top: 32px;
@@ -399,20 +389,21 @@
 
   .feedback-form__input-wrapper--contact {
     padding-left: 0px;
-    }
-
+  }
 
   .feedback-form__input-wrapper--contact .feedback-form__label--text {
     text-transform: uppercase;
   }
-
-
 
   .feedback-form__textarea {
     width: 650px;
     min-height: 160px;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  .feedback-form__required {
+    display: block;
   }
 
   .feedback-form__buttom {
@@ -422,14 +413,9 @@
 }
 
 
-
-
-
-
 ///desktop
 
 @media (min-width: $desktop-width) {
-
   .feedback-form {
   max-width: 960px;
   width: 100%;
@@ -443,9 +429,6 @@
     margin-bottom: 5px;
     margin-top: 25px;
   }
-/*
-  .feedback-form__wrapper--contact .feedback-form__input::placeholder {
-    width: 700px  }*/
 
   .feedback-form__fieldset--contact:nth-child(2) {
     margin-top: 28px;
@@ -468,7 +451,6 @@
     margin-top: 32px;
     margin-left: -20px;
   }
-
 
   .invisible {
     display: none;
@@ -494,7 +476,6 @@
     width: 960px;
   }
 
-
   .feedback-form__legend--fullname {
     text-align: left;
     padding-left: 25px;
@@ -516,7 +497,6 @@
   .feedback-form__input-wrapper--fullname {
     padding-left: 25px;
   }
-
 
   .feedback-form__wrapper--sights {
     width: 960px;

@@ -75,7 +75,17 @@
   width: 40px;
   height: 45px;
 
-  fill: red;
+  fill: $main-text-color;
+
+  &:hover {
+    fill: $main-color;
+  }
+
+  &:focus,
+  &:active {
+    fill: #b2b2b2;
+  }
 }
+
 
 
