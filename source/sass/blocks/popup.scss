@@ -1,5 +1,5 @@
 .popup {
-  display: none;
+  display: block;
   width: 320px;
   margin: 0 auto;
   text-align: center;
@@ -66,7 +66,7 @@
 }
 
 .popup__wrapper--closed {
-  display: block;
+  display: none;
 
 }
 
