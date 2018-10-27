@@ -5,6 +5,7 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var rename = require("gulp-rename");
 var postcss = require("gulp-postcss");
+var posthtml = require("gulp-posthtml");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var server = require("browser-sync").create();
@@ -77,21 +78,19 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-
 gulp.task("build", gulp.series(
-  "clean",
-  "copy",
+/*  "clean",
+  "copy",*/
   "css",
   "sprite",
   "html"
  ));
 
-
  gulp.task("server", function () {
   server.init({
   server: "build/"
   });
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/sass/**/*.sass", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
  });
