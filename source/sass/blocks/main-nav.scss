@@ -222,4 +222,8 @@
   .main-nav {
     @include desktop-container();
   }
+
+  .main-nav__logo-img {
+    max-width: 182px;
+  }
 }
