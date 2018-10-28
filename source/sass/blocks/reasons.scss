@@ -38,13 +38,13 @@
 .reasons__item {
   text-align: center;
   box-sizing: border-box;
+
   &--advantage {
     background-color: #eeeeee;
     padding-top: 16px;
     padding-bottom: 18px;
-
     border-bottom: 1px solid #d6d6d6;
-}
+  }
 
   &--short:last-child {
     border-bottom: none;
@@ -54,7 +54,6 @@
 .reasons__name {
   text-align: center;
   line-height: 26px;
-  /*margin: 0 auto;*/
   &--detailed {
     color: $bg;
   }
@@ -80,7 +79,6 @@
   margin-top: -20px;
 }
 
-
 .reasons__text {
   text-align: center;
   line-height: 26px;
@@ -95,21 +93,11 @@
     border-width: 15px 160px 15px;
     border-style: solid;
     border-color: transparent $main-color $main-color;
-
- }
-
-/*town*/
-
-
-/*.reasons__item--food {
-  margin-top: -20px;
-  margin-bottom: 55px;
 }
-*/
+
 .reasons__name--invisible {
   display: none;
 }
-
 
 .reasons__name--town {
   text-align: left;
@@ -130,18 +118,17 @@
   margin-top: 8px;
 }
 
-    .reasons__item--town {
-        padding-left: 70px;
-        padding-top: 25px;
-        margin-bottom: -10px;
-      }
+.reasons__item--town {
+  padding-left: 70px;
+  padding-top: 25px;
+  margin-bottom: -10px;
+}
 
 .reasons__item--accommodation {
   background-image: url("../img/icon-house.svg");
   background-position: 20px 10px;
   background-repeat: no-repeat;
   background-size: 37px 37px;
-  /*margin-top: 20px;*/
 }
 
 .reasons__item--souvenirs {
@@ -149,7 +136,6 @@
   background-position: 20px 10px;
   background-repeat: no-repeat;
   background-size: 37px 37px;
-
 }
 
 .reasons__item--food {
@@ -157,16 +143,13 @@
   background-position: 20px 10px;
   background-repeat: no-repeat;
   background-size: 37px 37px;
-        margin-bottom: 60px;
-
+  margin-bottom: 60px;
 }
-
 
 
 ///tablet
 
 @media (min-width: $tablet-width) {
-
   .reasons {
     margin-top: -10px;
   }
@@ -232,7 +215,6 @@
     padding-bottom: 20px;
   }
 
-
   .reasons__item--fullcolour {
     display: flex;
     flex-basis: 100%;
@@ -241,7 +223,6 @@
   .reasons__info--fullcolour-last {
     order: 2;
   }
-
 
   .reasons__info--fullcolour {
     flex-basis: 256px;
@@ -270,7 +251,6 @@
     padding-left: 25px;
     padding-right: 25px;
   }
-
 
   .reasons__item--fullcolour-last {
     margin-top: 65px;
@@ -302,7 +282,6 @@
     padding: 0;
     padding-top: 30px;
   }
-
 
   .reasons__name--town {
     text-align: center;
@@ -336,8 +315,6 @@
     padding-right: 14px;
     padding-bottom: 20px;
   }
-
-
 
   .reasons__accommodation {
     width: 77px;
@@ -375,7 +352,6 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .reasons__info--fullcolour {
     flex-basis: 400px;
@@ -394,7 +370,6 @@
     overflow: hidden;
   }
 
-
   .reasons__info--fullcolour {
     min-height: 258px;
     overflow: hidden;
@@ -402,18 +377,17 @@
 
   .reasons__info--fullcolour-first {
     padding-top: 50px;
-        margin-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   .reasons__info--fullcolour-last {
     padding-top: 55px;
     width: 230px;
-   }
+  }
 
   .reasons__item--town p {
     width: 290px;
   }
-
 
   .reasons__item--town {
     padding-top: 48px;
@@ -431,13 +405,9 @@
     padding-bottom: 45px;
   }
 
-
   .reasons__item--advantage .reasons__subtitle {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 39px;
+    padding-right: 39px;
+    margin-top: 5px;
   }
 }
-
-
-
-

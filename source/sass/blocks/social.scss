@@ -25,7 +25,6 @@
   }
 }
 
-
 .social__link:first-child {
   margin-left: 0;
 }
@@ -66,8 +65,6 @@
   }
 }
 
-
-
 .copyright__svg {
   display: block;
   padding-top: 5px;
@@ -75,7 +72,14 @@
   width: 40px;
   height: 45px;
 
-  fill: red;
+  fill: $main-text-color;
+
+  &:hover {
+    fill: $main-color;
+  }
+
+  &:focus,
+  &:active {
+    fill: #b2b2b2;
+  }
 }
-
-
