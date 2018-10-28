@@ -57,9 +57,17 @@
   }
 }
 
-.hyphenate {
+.hotels____hyphenate {
   display: none;
 }
+
+.hotels____iframe {
+  display: none;
+  position: relative;
+  width: 320px;
+  z-index: 2;
+}
+
 
 @media (min-width: $tablet-width) {
 
