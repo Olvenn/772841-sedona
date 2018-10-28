@@ -79,8 +79,8 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", gulp.series(
-/*  "clean",
-  "copy",*/
+  "clean",
+  "copy",
   "css",
   "sprite",
   "html"
@@ -90,7 +90,7 @@ gulp.task("build", gulp.series(
   server.init({
   server: "build/"
   });
-  gulp.watch("source/sass/**/*.sass", gulp.series("css"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("css", "refresh"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
  });
