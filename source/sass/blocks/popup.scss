@@ -2,10 +2,18 @@
   display: none;
   width: 320px;
   position: fixed;
-  top: 50%;
+
   left: center;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 1, 0.15);
   background-color: $bg;
+}
+
+.popup__failure {
+  top: 200px;
+}
+
+.popup__success {
+  top: 500px;
 }
 
 
