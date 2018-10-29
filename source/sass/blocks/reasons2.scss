@@ -17,7 +17,6 @@
 
 .reasons__subtitle {
   @include subtitle();
-  margin-bottom: 40px;
 }
 
 .reasons__subtitle-main {
@@ -42,10 +41,10 @@
 
   &--advantage {
     background-color: #eeeeee;
-    padding-top: 24px;
-    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-bottom: 18px;
     border-bottom: 1px solid #d6d6d6;
-}
+  }
 
   &--short:last-child {
     border-bottom: none;
@@ -55,7 +54,7 @@
 .reasons__name {
   text-align: center;
   line-height: 26px;
-  /*margin: 0 auto;*/
+
   &--detailed {
     color: $bg;
   }
@@ -65,34 +64,22 @@
   margin-bottom: 15px;
 }
 
+
 .reasons__info--fullcolour {
+
   background-color: $main-color;
 }
 
 .reasons__info--fullcolour-first {
   padding-top: 24px;
   padding-bottom: 24px;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    border-width: 15px 160px 15px;
-    border-style: solid;
-    border-color: transparent $main-color $main-color;
-    top: -30px;
-    left: 0;
-    }
-  }
+}
 
 .reasons__info--fullcolour-last {
   padding-top: 37px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   margin-top: -20px;
 }
-
 
 .reasons__text {
   text-align: center;
@@ -103,15 +90,21 @@
   }
 }
 
+.reasons__top {
+  width: 0;
+  height: 0;
+  border-width: 15px 160px 15px;
+  border-style: solid;
+  border-color: transparent $main-color $main-color;
+}
 
 .reasons__name--invisible {
   display: none;
 }
 
-
 .reasons__name--town {
   text-align: left;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .reasons__item--town p {
@@ -120,7 +113,7 @@
   text-align: left;
 }
 
-.reasons__item--advantage p{
+.reasons__item--advantage p {
   padding-left: 32px;
   padding-right: 32px;
   margin-left: auto;
@@ -128,18 +121,17 @@
   margin-top: 8px;
 }
 
-    .reasons__item--town {
-        padding-left: 70px;
-        padding-top: 15px;
-        margin-bottom: -26px;
-      }
+.reasons__item--town {
+  padding-left: 70px;
+  padding-top: 25px;
+  margin-bottom: -10px;
+}
 
 .reasons__item--accommodation {
   background-image: url("../img/icon-house.svg");
   background-position: 20px 10px;
   background-repeat: no-repeat;
   background-size: 37px 37px;
-  /*margin-top: 20px;*/
 }
 
 .reasons__item--souvenirs {
@@ -147,7 +139,6 @@
   background-position: 20px 10px;
   background-repeat: no-repeat;
   background-size: 37px 37px;
-
 }
 
 .reasons__item--food {
@@ -155,34 +146,34 @@
   background-position: 20px 10px;
   background-repeat: no-repeat;
   background-size: 37px 37px;
-        margin-bottom: 60px;
-
+  margin-bottom: 60px;
 }
-
 
 
 ///tablet
 
 @media (min-width: $tablet-width) {
-
   .reasons {
     margin-top: -10px;
   }
 
   .reasons__list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-.reasons__header {
-  margin-bottom: 30px;
-}
+  .reasons__header {
+    width: 595px;
+    padding-top: 40px;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+  }
 
-.reasons__name--invisible {
-  display: block;
-}
+  .reasons__name--invisible {
+    display: block;
+  }
 
   .top {
     display: none;
@@ -211,7 +202,6 @@
     }
   }
 
-
   .reasons__info {
     display: flex;
     flex-direction: column;
@@ -221,15 +211,10 @@
     font-size: 21px;
   }
 
-  .reasons__picture {
-    margin-top: 0;
-  }
-
   .reasons__item--town .reasons__name {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
 
   .reasons__item--fullcolour {
     display: flex;
@@ -237,23 +222,34 @@
   }
 
   .reasons__info--fullcolour-last {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    margin-top: 0;
     order: 2;
   }
 
-
   .reasons__info--fullcolour {
     flex-basis: 256px;
+    min-height: 256px;
+    overflow: hidden;
   }
 
   .reasons__info--fullcolour-first {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 25px;
     padding-right: 25px;
-    box-sizing: border-box;
     margin-bottom: 15px;
   }
 
-  .reasons__info--fullcolour-last {
-    box-sizing: border-box;
+  .reasons__wrapper {
+    width: 256px;
+  }
+
+
+  .reasons__picture {
     margin-top: 0;
   }
 
@@ -262,26 +258,18 @@
     padding-right: 25px;
   }
 
-
   .reasons__item--fullcolour-last {
     margin-top: 65px;
     margin-bottom: -3px;
   }
 
-  .reasons__name:nth-child(1){
+  .reasons__name:nth-child(1) {
     width: 155px;
-
     margin: 0 auto;
   }
 
-  .reasons__header {
-    width: 595px;
-    padding-top: 40px;
-    padding-bottom: 8px;
-  }
-
   .reasons__title {
-    font-size: 21px
+    font-size: 21px;
   }
 
   .reasons__item--town {
@@ -293,7 +281,6 @@
     padding: 0;
     padding-top: 30px;
   }
-
 
   .reasons__name--town {
     text-align: center;
@@ -328,13 +315,11 @@
     padding-bottom: 20px;
   }
 
-
-
   .reasons__accommodation {
     width: 77px;
     height: 77px;
     background-image: url("../img/icon-house_blue.svg");
-    background-position: 0  0;
+    background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 75px 75px;
     margin: 0 auto;
@@ -356,16 +341,10 @@
     background-image: url("../img/icon-burger_blue.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-size:  77px 69px;
+    background-size: 77px 69px;
     margin: 0 auto;
   }
-
-  .reasons__info--fullcolour {
-    min-height: 256px;
-    overflow: hidden;
-  }
 }
-
 
 @media (min-width: $desktop-width) {
   .reasons__info--fullcolour {
@@ -377,21 +356,20 @@
     display: flex;
     flex-wrap: wrap;
     border: none;
+  }
+
+  .reasons__picture {
+    margin-top: 0;
     overflow: hidden;
   }
 
-  .reasons__item--fullcolour {
-    max-height: 258px;
-    overflow: hidden;
-  }
-
-
-  .reasons__info--fullcolour {
-    min-height: 258px;
+  .reasons__item--fullcolour .reasons__picture {
+    height: auto;
     overflow: hidden;
   }
 
   .reasons__info--fullcolour-first {
+    width: 400px;
     padding-top: 50px;
     margin-bottom: 50px;
   }
@@ -399,12 +377,11 @@
   .reasons__info--fullcolour-last {
     padding-top: 55px;
     width: 230px;
-   }
+  }
 
   .reasons__item--town p {
     width: 290px;
   }
-
 
   .reasons__item--town {
     padding-top: 48px;
@@ -422,13 +399,9 @@
     padding-bottom: 45px;
   }
 
-
   .reasons__item--advantage .reasons__subtitle {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 39px;
+    padding-right: 39px;
+    margin-top: 5px;
   }
 }
-
-
-
-

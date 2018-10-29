@@ -23,7 +23,6 @@
 .hotels__search {
   display: block;
   width: 280px;
-  margin-top: 60px;
   padding-left: 0;
   padding-right: 0;
   margin: 0 auto;
@@ -57,11 +56,11 @@
   }
 }
 
-.hotels____hyphenate {
+.hotels__hyphenate {
   display: none;
 }
 
-.hotels____iframe {
+.hotels__iframe {
   display: none;
   position: relative;
   width: 320px;
@@ -70,7 +69,6 @@
 
 
 @media (min-width: $tablet-width) {
-
   .hotels {
     width: 648px;
     margin: 0 auto;
@@ -100,8 +98,7 @@
   }
 }
 
-  @media (min-width: $desktop-width) {
-
+@media (min-width: $desktop-width) {
   .hotels {
     width: 100%;
   }

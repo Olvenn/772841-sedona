@@ -15,7 +15,6 @@
   padding-bottom: 12px;
 }
 
-
 .video__subtitle {
   width: 250px;
   margin: 0 auto;
@@ -31,8 +30,6 @@
   position: relative;
 }
 
-
-
 /*conttols*/
 
 .video__controls {
@@ -43,27 +40,31 @@
   position: absolute;
   bottom: -60px;
   width: 280px;
-  background-image:
-  linear-gradient(rgba(0, 0, 0, 0.6) 45px,
-  $input-main 45px,
-
-  $input-main 100%);
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6) 45px, $input-main 45px, $input-main 100%);
   margin: 0 auto;
   padding-bottom: 20px;
   margin-left: 20px;
   margin-right: auto;
 }
 
+.video__item {
+  outline: none;
+  background: transparent;
+}
+
 .video__item--replay,
 .video__item--subtitles,
 .video__item--fullscreen {
-
+  outline: none;
+  background: transparent;
   padding-top: 20px;
+  border: none;
 }
 
 .video__item--progress {
-  margin-bottom: -20px;
+  width: 280px;
+  height: 45px;
+  margin: 0 auto;
 }
 
 .video__item--replay {
@@ -82,14 +83,6 @@
   align-items: center;
   margin-top: 20px;
 }
-
-.video__item--progress {
-  width: 280px;
-  height: 45px;
-
-  margin: 0 auto;
-}
-
 
 .video__item--progress span {
   width: 235px;
@@ -137,9 +130,6 @@
   &:active {
     fill: $video-control-down;
   }
-
-
-
 }
 
 
@@ -157,7 +147,6 @@
   &:active {
     fill: $video-control-down;
   }
-
 }
 
 .video__pic-fullscreen {
@@ -174,7 +163,6 @@
   &:active {
     fill: $video-control-down;
   }
-
 }
 
 
@@ -205,7 +193,7 @@
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 30px;
-    margin: 0
+    margin: 0;
   }
 
   .video__title {
@@ -218,13 +206,14 @@
     padding-bottom: 75px;
   }
 
-  .video__item--replay  {
+  .video__item--replay {
     order: -1;
   }
 
   .video__item--progress {
     width: auto;
     background-color: transparent;
+    flex-grow: 1;
   }
 
   .video__item--replay,
@@ -235,11 +224,6 @@
     padding: 0;
     width: 60px;
     margin: 0 auto;
-  }
-
-
-  .video__item--progress {
-    flex-grow: 1;
   }
 
   .video__item--progress span {
@@ -265,15 +249,9 @@
     &:active {
       fill: #949494;
     }
-
-
-
   }
 
-
   .video__pic-subtitles {
-
-
     fill: $bg;
 
     &:hover {
@@ -299,7 +277,6 @@
       fill: #949494;
     }
   }
-
 }
 
 /// desktop
@@ -313,7 +290,5 @@
 
   .video__controls {
     width: 800px;
-
   }
-
 }
