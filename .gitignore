@@ -5,6 +5,7 @@
 *.log
 *.pdf
 *.psd
+normalize.scss
 *.sublime*
 build/
 node_modules/

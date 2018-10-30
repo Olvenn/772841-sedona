@@ -7,7 +7,7 @@
   color: $bg;
 }
 
-.page-main__plain-text--white {
+.page-main__plain-text-white {
   @include text-light();
   font-family: $base-font;
 }
@@ -37,7 +37,7 @@
   }
 }
 
-.page-header__promo-pic {
+.page-main__promo-pic {
   display: block;
   width: 280px;
   margin: 0 auto;
@@ -85,7 +85,7 @@
     }
   }
 
-  .page-header__promo-pic {
+  .page-main__promo-pic {
     width: 462px;
   }
 
