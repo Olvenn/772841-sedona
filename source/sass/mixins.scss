@@ -78,7 +78,7 @@
 @mixin mobile-container() {
   width: 320px;
   margin: 0 auto;
-  }
+}
 
 @mixin mobile-content() {
   width: 320px;
@@ -104,6 +104,3 @@
   width: 960px;
   padding: 0 120px;
 }
-
-@retina-dpi: 144dpi;
-@retina-dppx: 1.5dppx;

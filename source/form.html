@@ -4,8 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <title>HTML Academy: Седона - форма для отзыва</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.js"></script>
 </head>
 
 <body>
@@ -34,7 +37,7 @@
             <a href="photo.html">Фото и видео</a>
           </li>
           <li class="main-nav__item main-nav__item--logo">
-            <a class="main-nav__logo">
+            <a class="main-nav__logo" href="index.html">
               <picture>
                 <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
                 <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
@@ -73,43 +76,51 @@
             <legend class="feedback-form__legend feedback-form__legend--fullname page-main__main-headline">
               Представьтесь:
             </legend>
-            <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
-              <label class="feedback-form__label feedback-form__label--text" for="name">Имя*:</label>
-              <input class="feedback-form__input feedback-form__input--text" id="name" type="text" name="name" placeholder="Пётр" required>
-            </div>
-            <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
-              <label class="feedback-form__label feedback-form__label--text" for="lastname">Фамилия*:</label>
-              <input class="feedback-form__input feedback-form__input--text" id="lastname" type="text" name="lastname" placeholder="Иванов"
-                required>
-            </div>
-            <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
-              <label class="feedback-form__label feedback-form__label--text" for="patronymic">Отчество:</label>
-              <input class="feedback-form__input feedback-form__input--text" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+            <div class="feedback-form__wrapper-fullname">
+              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
+                <label class="feedback-form__label feedback-form__label--text" for="name">Имя*:</label>
+                <input class="feedback-form__input feedback-form__input--text" id="name" type="text" name="name" placeholder="Пётр" required>
+              </div>
+              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
+                <label class="feedback-form__label feedback-form__label--text" for="lastname">Фамилия*:</label>
+                <input class="feedback-form__input feedback-form__input--text" id="lastname" type="text" name="lastname" placeholder="Иванов"
+                  required>
+              </div>
+              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
+                <label class="feedback-form__label feedback-form__label--text" for="patronymic">Отчество:</label>
+                <input class="feedback-form__input feedback-form__input--text" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+              </div>
             </div>
           </fieldset>
+
           <fieldset class="feedback-form__fieldset feedback-form__fieldset--contact">
             <legend class="feedback-form feedback-form__legend page-main__main-headline">
               Контактная информация:
             </legend>
+
             <div class="feedback-form__wrapper feedback-form__wrapper--contact">
+
               <div class="feedback-form__input-wrapper feedback-form__input-wrapper--contact">
                 <label class="feedback-form__label feedback-form__label--text" for="tel">
-                  <span class="invisible">Контактный</span>
+                  <span class="feedback-form__invisible">Контактный</span>
                   телефон*:</label>
                 <div class="feedback-form__icon feedback-form__icon--tel">
                   <input class="feedback-form__input feedback-form__input--text" id="tel" type="tel" name="tel" placeholder="Введите телефон"
                     required>
                 </div>
               </div>
-              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--contact">
+
+              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--mail feedback-form__input-wrapper--contact">
                 <label class="feedback-form__label feedback-form__label--text" for="email">Электронная почта*:</label>
                 <div class="feedback-form__icon feedback-form__icon--mail">
                   <input class="feedback-form__input feedback-form__input--text" id="email" type="email" name="email" placeholder="Введите e-mail"
                     required>
                 </div>
               </div>
+
             </div>
           </fieldset>
+
           <fieldset class="feedback-form__fieldset  feedback-form__fieldset--impression">
             <legend class="feedback-form__legend page-main__main-headline">
               Ваше общее впечатление:
@@ -161,7 +172,7 @@
             <legend class="feedback-form__legend page-main__main-headline">
               Опишите свои эмоции:
             </legend>
-            <textarea class="feedback-form__textarea" cols="20" rows="3ы" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="feedback-form__textarea" cols="20" rows="3" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
             <div class="feedback-form__buttom">
               <button class="feedback-form__submit button" type="submit">Отправить отзыв</button>
               <p class="feedback-form__required plain-text">* &mdash; обязательные поля</p>
@@ -172,7 +183,8 @@
         <div class="popup popup__failure popup__failure--js">
           <div class="popup__wrapper">
             <h2 class="popup__title popup__title--failure">Что-то пошло не так!</h2>
-            <p class="popup__text popup__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+            <p class="popup__text popup__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
+            </p>
             <div class="popup__wrapper-button popup__wrapper-button--failure">
               <button class="button popup__button-close popup__button-close--failure" type="button">Ок</button>
             </div>

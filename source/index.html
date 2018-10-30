@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.js"></script>
 </head>
 
 <body>
@@ -35,7 +37,7 @@
             <a href="photo.html">Фото и видео</a>
           </li>
           <li class="main-nav__item main-nav__item--logo">
-            <a class="main-nav__logo">
+            <a class="main-nav__logo" href="index.html">
               <picture>
                 <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
                 <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
@@ -47,7 +49,7 @@
             <a href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" >HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -56,7 +58,7 @@
     <main class="page-main">
 
       <div class="page-main__header-picture">
-        <img class="page-header__promo-pic" src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону!">
+        <img class="page-main__promo-pic" src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону!">
       </div>
       <h1 class="visually-hidden">Wellcome to Sedona!</h1>
       <section class="reasons">
@@ -70,11 +72,10 @@
         <ul class="reasons__list">
 
           <li class="reasons__item reasons__item--fullcolour reasons__item--fullcolour-first">
-            <div class="top"></div>
             <div class="reasons__info reasons__info--fullcolour reasons__info--fullcolour-first">
               <div class="reasons__name page-main__main-headline page-main__main-headline--white">Настоящий городок</div>
-              <p class="reasons__number-white page-main__plain-text--white">&mdash; №1 &mdash;</p>
-              <p class="reasons__subtitle-white page-main__plain-text--white">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="reasons__number-white page-main__plain-text-white">&mdash; №1 &mdash;</p>
+              <p class="reasons__subtitle-white page-main__plain-text-white">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <div class="reasons__picture">
               <picture>
@@ -95,7 +96,7 @@
             <div class="reasons__souvenirs"></div>
             <div class="reasons__name page-main__main-headline reasons__name--town">Сувениры</div>
             <p class="reasons__subtitle reasons__subtitle--recommendation">Не только китайского,
-              <br> но и местного производства!
+              <br class="reasons__invisible"> но и местного производства!
             </p>
           </li>
 
@@ -110,15 +111,14 @@
             <div class="reasons__info page-main__main-headline reasons__info--fullcolour reasons__info--fullcolour-last">
               <div class="reasons__name page-main__main-headline page-main__main-headline--white">Там есть
                 <br class="reasons__name--invisible"> мост дьявола</div>
-              <p class="reasons__number-white page-main__plain-text--white">&mdash; №2 &mdash;</p>
-              <p class="reasons__subtitle-white page-main__plain-text--white">Да, по нему можно пройти!
-                <br> Если вы осмелитесь, конечно</p>
+              <p class="reasons__number-white page-main__plain-text-white">&mdash; №2 &mdash;</p>
+              <p class="reasons__subtitle-white page-main__plain-text-white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="change">
-              <picture class="reasons__picture">
-                <source srcset="img/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
-                <source srcset="img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
-                <img class="reasons__pic" src="img/main-bridge-mobile@1x.jpg" alt="Городок Седона">
+            <div class="reasons__picture">
+              <picture class="reasons__pic">
+                <source srcset="img/main-bridge-desktop@2x.jpg 2x, img/main-bridge-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="reasons__pic" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Городок Седона">
               </picture>
             </div>
           </li>
@@ -129,7 +129,7 @@
             <p class="reasons__subtitle">Все интересные места находятся очень близко</p>
           </li>
 
-          <li class="reasons__item reasons__item--advantage">
+          <li class="reasons__item reasons__item--advantage reasons__item--road">
             <div class="reasons__name page-main__main-headline">Красивая дорога</div>
             <p class="reasons__number">&mdash; №4 &mdash;</p>
             <p class="reasons__subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -142,48 +142,51 @@
           </li>
         </ul>
       </section>
+    </main>
+    </div>
 
       <section class="hotels">
         <header class="hotels__header">
           <h2 class="visually-hidden">Поиск гостинницы в Седоне</h2>
           <p class="hotels__title page-main__main-headline">Заинтересовались?</p>
-          <p class="hotelsdescription">Укажите предполагаемые даты поездки,
-          <br class="hotels__hyphenate"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="hotels__description">Укажите предполагаемые даты поездки,
+            <br class="hotels__hyphenate"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </header>
-        <a class="hotels__search button hotels__search--button" href="#">Найти гостинницу</a>
-        <div class="hotels__map" name="sedona-map">
+        <a class="hotels__search button hotels__search--button" href="hotel.html">Найти гостинницу</a>
+        <div class="hotels__map">
           <h3 class="visually-hidden">Карта Седоны</h3>
-          <map class="hotels__iframe hotels__iframe--js visually-hidden">
-          <iframe class="hotels__iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1442700.3819081737!2d-112.41735147360346!3d35.224220037180146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1506855706120"
-            width="1200" height="350" style="border: 0;" allowfullscreen></iframe>
-          </div>
-        </map>
+          <map class="hotels__iframe hotels__iframe--js" name="sedona-map">
+            <iframe class="hotels__iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1442700.3819081737!2d-112.41735147360346!3d35.224220037180146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1506855706120"
+               style="border: 0;" allowfullscreen></iframe>
+          </map>
+        </div>
       </section>
-    </main>
+
+
 
     <footer class="page-footer">
       <p class="page-footer__hashtag">#visitsedona</p>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#"></a>
+          <a class="social__link social__link--twitter" href="#" title="Твиттер"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#"></a>
+          <a class="social__link social__link--facebook" href="#" title="Фейсбук"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#"></a>
+          <a class="social__link social__link--youtube" href="#" title="Ютуб"></a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="HTML Академия">
           <svg class="copyright__svg" width="27" height="34">
             <use xlink:href="#htmlacademy"></use>
           </svg>
         </a>
       </div>
     </footer>
-  </div>
+
 </body>
 
 </html>

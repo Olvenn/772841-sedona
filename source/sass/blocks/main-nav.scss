@@ -76,7 +76,7 @@
 
 .main-nav__item--logo a {
   display: block;
-  padding: 0px;
+  padding: 0;
   background-color: transparent;
 }
 
@@ -163,7 +163,6 @@
 
 /*кнопка*/
 
-
 ///tablet
 
 @media (min-width: $tablet-width) {
@@ -171,7 +170,7 @@
     width: 100%;
   }
 
-    .main-nav__list {
+  .main-nav__list {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -183,7 +182,6 @@
   .main-nav__item {
     @include headline();
     font-size: 14px;
-    line-height: 26px;
     width: 20%;
     background-color: $bg;
     line-height: 40px;
@@ -195,7 +193,7 @@
 
     &:focus,
     &:active {
-      background-color:  $bg;
+      background-color: $bg;
     }
   }
 
@@ -208,7 +206,7 @@
 
     &:focus,
     &:active {
-      color:  $text-down-color;
+      color: $text-down-color;
     }
   }
 
@@ -218,7 +216,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .main-nav {
     @include desktop-container();
   }
