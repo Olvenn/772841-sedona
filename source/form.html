@@ -7,7 +7,7 @@
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <title>HTML Academy: Седона - форма для отзыва</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -76,22 +76,22 @@
               Представьтесь:
             </legend>
             <div class="feedback-form__wrapper-fullname">
-            <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
-              <label class="feedback-form__label feedback-form__label--text" for="name">Имя*:</label>
-              <input class="feedback-form__input feedback-form__input--text" id="name" type="text" name="name"
-                placeholder="Пётр" required>
+              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
+                <label class="feedback-form__label feedback-form__label--text" for="name">Имя*:</label>
+                <input class="feedback-form__input feedback-form__input--text" id="name" type="text" name="name"
+                  placeholder="Пётр" required>
+              </div>
+              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
+                <label class="feedback-form__label feedback-form__label--text" for="lastname">Фамилия*:</label>
+                <input class="feedback-form__input feedback-form__input--text" id="lastname" type="text" name="lastname"
+                  placeholder="Иванов" required>
+              </div>
+              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
+                <label class="feedback-form__label feedback-form__label--text" for="patronymic">Отчество:</label>
+                <input class="feedback-form__input feedback-form__input--text" id="patronymic" type="text" name="patronymic"
+                  placeholder="Александрович">
+              </div>
             </div>
-            <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
-              <label class="feedback-form__label feedback-form__label--text" for="lastname">Фамилия*:</label>
-              <input class="feedback-form__input feedback-form__input--text" id="lastname" type="text" name="lastname"
-                placeholder="Иванов" required>
-            </div>
-            <div class="feedback-form__input-wrapper feedback-form__input-wrapper--fullname">
-              <label class="feedback-form__label feedback-form__label--text" for="patronymic">Отчество:</label>
-              <input class="feedback-form__input feedback-form__input--text" id="patronymic" type="text" name="patronymic"
-                placeholder="Александрович">
-            </div>
-          </div>
           </fieldset>
 
           <fieldset class="feedback-form__fieldset feedback-form__fieldset--contact">
@@ -103,7 +103,7 @@
 
               <div class="feedback-form__input-wrapper feedback-form__input-wrapper--contact">
                 <label class="feedback-form__label feedback-form__label--text" for="tel">
-                  <span class="invisible">Контактный</span>
+                  <span class="feedback-form__invisible">Контактный</span>
                   телефон*:</label>
                 <div class="feedback-form__icon feedback-form__icon--tel">
                   <input class="feedback-form__input feedback-form__input--text" id="tel" type="tel" name="tel"
@@ -111,7 +111,7 @@
                 </div>
               </div>
 
-              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--contact">
+              <div class="feedback-form__input-wrapper feedback-form__input-wrapper--mail feedback-form__input-wrapper--contact">
                 <label class="feedback-form__label feedback-form__label--text" for="email">Электронная почта*:</label>
                 <div class="feedback-form__icon feedback-form__icon--mail">
                   <input class="feedback-form__input feedback-form__input--text" id="email" type="email" name="email"

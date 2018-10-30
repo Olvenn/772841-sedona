@@ -1,14 +1,14 @@
 /// mobile
 .reasons {
-  margin-bottom: 57px;
-  margin-top: -14px;
+  margin-bottom: 53px;
+  margin-top: -13px;
 }
 
 .reasons__header {
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 40px;
-  padding-bottom: 15px;
+  padding-top: 37px;
+  padding-bottom: 12px;
   box-sizing: border-box;
   text-align: center;
   background-color: $bg;
@@ -17,7 +17,7 @@
 
 .reasons__subtitle {
   @include subtitle();
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .reasons__subtitle-main {
@@ -39,23 +39,34 @@
 .reasons__item {
   text-align: center;
   box-sizing: border-box;
-
-  &--advantage {
-    background-color: #eeeeee;
-    padding-top: 24px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #d6d6d6;
 }
+
+.reasons__item--advantage {
+  background-color: #eeeeee;
+  padding-top: 3px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-bottom: 1px solid #d6d6d6;
 
   &--short:last-child {
     border-bottom: none;
   }
 }
 
+.reasons__item--advantage .reasons__name {
+  padding-top: 20px;
+  margin-bottom: -9px;
+}
+
+.reasons__item--advantage .reasons__subtitle {
+  margin-bottom: 32px;
+  line-height: 21px;
+}
+
 .reasons__name {
   text-align: center;
   line-height: 26px;
-  /*margin: 0 auto;*/
+
   &--detailed {
     color: $bg;
   }
@@ -71,7 +82,7 @@
 
 .reasons__info--fullcolour-first {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 27px;
   position: relative;
 
   &::before {
@@ -84,15 +95,14 @@
     border-color: transparent $main-color $main-color;
     top: -30px;
     left: 0;
-    }
   }
+}
 
 .reasons__info--fullcolour-last {
   padding-top: 37px;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   margin-top: -20px;
 }
-
 
 .reasons__text {
   text-align: center;
@@ -103,15 +113,13 @@
   }
 }
 
-
 .reasons__name--invisible {
   display: none;
 }
 
-
 .reasons__name--town {
   text-align: left;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .reasons__item--town p {
@@ -120,34 +128,24 @@
   text-align: left;
 }
 
-.reasons__item--advantage p{
-  padding-left: 32px;
-  padding-right: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 8px;
+.reasons__item--town {
+  padding-left: 70px;
+  padding-top: 15px;
+  margin-bottom: -32px;
 }
-
-    .reasons__item--town {
-        padding-left: 70px;
-        padding-top: 15px;
-        margin-bottom: -26px;
-      }
 
 .reasons__item--accommodation {
   background-image: url("../img/icon-house.svg");
-  background-position: 20px 10px;
+  background-position: 20px 6px;
   background-repeat: no-repeat;
   background-size: 37px 37px;
-  /*margin-top: 20px;*/
 }
 
 .reasons__item--souvenirs {
   background-image: url("../img/icon-gift.svg");
-  background-position: 20px 10px;
+  background-position: 20px 6px;
   background-repeat: no-repeat;
   background-size: 37px 37px;
-
 }
 
 .reasons__item--food {
@@ -155,42 +153,50 @@
   background-position: 20px 10px;
   background-repeat: no-repeat;
   background-size: 37px 37px;
-        margin-bottom: 60px;
-
+  margin-bottom: 60px;
 }
 
-
+.reasons__invisible {
+  display: none;
+}
 
 ///tablet
 
 @media (min-width: $tablet-width) {
-
   .reasons {
-    margin-top: -10px;
+    margin-top: -8px;
+    margin-bottom: 55px;
+  }
+
+  .reasons__info--fullcolour-first::before {
+    display: none;
   }
 
   .reasons__list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-.reasons__header {
-  margin-bottom: 30px;
-}
+  .reasons__header {
+    width: 595px;
+    padding-top: 40px;
+    padding-bottom: 5px;
+  }
 
-.reasons__name--invisible {
-  display: block;
-}
+  .reasons__title {
+    font-size: 21px;
+  }
 
-  .top {
-    display: none;
+  .reasons__name--invisible {
+    display: block;
   }
 
   .reasons__item {
     width: 256px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     border: none;
 
@@ -211,7 +217,6 @@
     }
   }
 
-
   .reasons__info {
     display: flex;
     flex-direction: column;
@@ -219,69 +224,57 @@
 
   .reasons__name {
     font-size: 21px;
+    margin: 0 auto;
   }
 
   .reasons__picture {
     margin-top: 0;
   }
 
-  .reasons__item--town .reasons__name {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .reasons__item--fullcolour-first {
+    margin-bottom: -40px;
   }
-
 
   .reasons__item--fullcolour {
     display: flex;
     flex-basis: 100%;
   }
 
-  .reasons__info--fullcolour-last {
-    order: 2;
-  }
-
-
   .reasons__info--fullcolour {
     flex-basis: 256px;
-  }
-
-  .reasons__info--fullcolour-first {
-    padding-left: 25px;
-    padding-right: 25px;
-    box-sizing: border-box;
-    margin-bottom: 15px;
   }
 
   .reasons__info--fullcolour-last {
     box-sizing: border-box;
     margin-top: 0;
+    order: 2;
+  }
+
+  .reasons__info--fullcolour-first {
+    padding-top: 15px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+  }
+
+  .reasons__info--fullcolour-first .reasons__name {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 30px;
   }
 
   .reasons__subtitle-white {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 43px;
+    padding-right: 43px;
   }
-
 
   .reasons__item--fullcolour-last {
     margin-top: 65px;
     margin-bottom: -3px;
   }
 
-  .reasons__name:nth-child(1){
-    width: 155px;
-
-    margin: 0 auto;
-  }
-
-  .reasons__header {
-    width: 595px;
-    padding-top: 40px;
-    padding-bottom: 8px;
-  }
-
-  .reasons__title {
-    font-size: 21px
+  .reasons__item--town .reasons__name {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .reasons__item--town {
@@ -294,10 +287,9 @@
     padding-top: 30px;
   }
 
-
   .reasons__name--town {
     text-align: center;
-    margin: 0;
+    margin-bottom: 5px;
     padding: 0;
   }
 
@@ -321,15 +313,6 @@
     margin-top: 0;
   }
 
-  .reasons__item--advantage {
-    padding-top: 45px;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-bottom: 20px;
-  }
-
-
-
   .reasons__accommodation {
     width: 77px;
     height: 77px;
@@ -338,6 +321,7 @@
     background-repeat: no-repeat;
     background-size: 75px 75px;
     margin: 0 auto;
+    margin-top: 6px;
   }
 
   .reasons__souvenirs {
@@ -348,6 +332,7 @@
     background-repeat: no-repeat;
     background-size: 64px 76px;
     margin: 0 auto;
+    margin-top: 6px;
   }
 
   .reasons__food {
@@ -356,28 +341,69 @@
     background-image: url("../img/icon-burger_blue.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-size:  77px 69px;
+    background-size: 77px 69px;
     margin: 0 auto;
+    margin-top: 6px;
   }
 
-  .reasons__info--fullcolour {
-    min-height: 256px;
-    overflow: hidden;
+  .reasons__item--advantage {
+    padding-top: 25px;
+    padding-bottom: 13px;
+    padding-left: 49px;
+    padding-right: 49px;
+  }
+
+  .reasons__item--advantage .reasons__number {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .reasons__item--advantage .reasons__name {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .reasons__invisible {
+    display: block;
+  }
+
+  .reasons__item--road .reasons__subtitle {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
+  .reasons {
+    margin-top: -12px;
+    margin-bottom: 0;
+  }
+
   .reasons__info--fullcolour {
     flex-basis: 400px;
+    overflow: hidden;
   }
 
   .reasons__item {
     width: 400px;
-    display: flex;
-    flex-wrap: wrap;
     border: none;
-    overflow: hidden;
+  }
+
+  .reasons__subtitle-white {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .reasons__list:nth-child(2) .reasons__subtitle-white {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+
+  .reasons__name--town {
+    margin-top: 6px;
+    margin-bottom: 0;
   }
 
   .reasons__item--fullcolour {
@@ -385,50 +411,57 @@
     overflow: hidden;
   }
 
-
-  .reasons__info--fullcolour {
-    min-height: 258px;
-    overflow: hidden;
+  .reasons__info--fullcolour-first {
+    padding-top: 20px;
+    padding-bottom: 0;
+    box-sizing: border-box;
   }
 
-  .reasons__info--fullcolour-first {
-    padding-top: 50px;
-    margin-bottom: 50px;
+  .reasons__info--fullcolour-first .reasons__name {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .reasons__info--fullcolour-last {
-    padding-top: 55px;
+    padding-top: 45px;
     width: 230px;
-   }
+  }
+
+  .reasons__accommodation {
+    margin-top: 12px;
+  }
+
+  .reasons__souvenirs {
+    margin-top: 12px;
+  }
+
+  .reasons__food {
+    margin-top: 12px;
+  }
 
   .reasons__item--town p {
     width: 290px;
   }
 
-
-  .reasons__item--town {
-    padding-top: 48px;
-  }
-
   .reasons__item--fullcolour-last {
     margin-top: 85px;
-    margin-bottom: 0;
+    margin-bottom: -30px;
   }
 
   .reasons__item--advantage {
-    display: flex;
     flex-direction: column;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    margin-top: 25px;
+    padding-bottom: 29px;
   }
 
+  .reasons__item--advantage .reasons__name {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: -5px;
+  }
 
-  .reasons__item--advantage .reasons__subtitle {
-    padding-left: 50px;
-    padding-right: 50px;
+  .reasons__item--road .reasons__subtitle {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
-
-
-
-

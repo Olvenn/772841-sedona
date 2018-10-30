@@ -21,8 +21,10 @@
 .photo__subtitle {
   @include text();
   padding-top: 8px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   line-height: 26px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .photo__author {
@@ -31,11 +33,16 @@
   margin-top: -14px;
   color: $main-text-color;
   text-transform: none;
-  margin-bottom: -6px;
+  margin-bottom: -4px;
+
+  &:last-child {
+    margin-top: -15px;
+  }
 }
 
 .photo__title {
   @include photo-description-text();
+  margin-top: 11px;
 }
 
 .photo__sum-likes {
@@ -45,7 +52,7 @@
 .photo-like-icon {
   width: 22px;
   height: 20px;
-  margin-right: 10px;
+  margin-right: 6px;
   fill: #b2b2b2;
 }
 
@@ -54,7 +61,7 @@
   border: none;
   outline: none;
   padding-top: 10px;
-  margin-left: -10px;
+  margin-left: -5px;
   padding-bottom: 20px;
 }
 
@@ -67,6 +74,10 @@
     margin-top: 70px;
   }
 
+  .photo__hyphenate {
+    display: block;
+  }
+
   .photo__caption {
     font-size: 30px;
   }
@@ -76,7 +87,10 @@
   }
 
   .photo__subtitle {
-    padding-bottom: 55px;
+    width: 500px;
+    padding-top: 11px;
+    padding-bottom: 60px;
+    margin-left: -40px;
   }
 
   .photo__gallary {
@@ -109,9 +123,14 @@
     width: 100%;
     min-height: 80px;
     background-color: $input-main;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 25px;
     box-sizing: border-box;
     margin-top: -6px;
+  }
+
+  .photo__like {
+    margin-top: 10px;
   }
 
   .photo__text {
@@ -129,10 +148,11 @@
   .photo {
     width: 100%;
     margin-top: 110px;
+    margin-bottom: -2px;
   }
 
   .photo__header {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   .photo__description {
@@ -141,6 +161,10 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     color: $bg;
+  }
+
+  .photo__author {
+    margin-bottom: -3px;
   }
 
   .photo__description p,
@@ -156,7 +180,7 @@
     position: relative;
     flex-basis: 400px;
     border: none;
-    margin-top: -4px;
+    margin-top: -5px;
 
     &:first-child {
       flex-basis: 100%;
