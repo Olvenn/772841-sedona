@@ -17,5 +17,7 @@
   .page-wrapper {
     @include desktop-container();
     max-width: 1200px;
+
+    box-shadow: 1px 8px 15px 6px rgba(0, 0, 0, 0.1);
   }
 }

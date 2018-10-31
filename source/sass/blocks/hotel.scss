@@ -10,10 +10,12 @@
 
 .hotels__description {
   @include text();
+  width: 290px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   line-height: 24px;
-  padding-bottom: 23px;
+  padding-bottom: 37px;
 }
 
 .hotels__wrapper {
@@ -98,7 +100,7 @@
   }
 
   .hotels__search {
-    width: 450px;
+    width: 447px;
     margin-bottom: 62px;
   }
 
