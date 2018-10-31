@@ -105,7 +105,7 @@
 }
 
 .video__item--replay {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .video__item--fullscreen {
@@ -116,9 +116,6 @@
 .video__item--subtitles {
   padding-left: 100px;
 }
-
-
-
 
 .video__pic-replay {
   width: 16px;
@@ -256,7 +253,7 @@
     width: 390px;
     background-color: transparent;
     margin-left: 40px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .video__item--progress span {
@@ -264,9 +261,9 @@
     height: 3px;
     margin: 0 auto;
     margin-top: 22px;
-   }
+  }
 
-   .video__item--progress span::after {
+  .video__item--progress span::after {
     margin-left: 93px;
     width: 9px;
     height: 9px;
@@ -275,7 +272,7 @@
   .video__item--replay {
     margin: 0 auto;
     padding-left: 15px;
-    margin-right: 00px;
+    margin-right: 0;
     order: -1;
   }
 
@@ -313,10 +310,10 @@
     width: 485px;
     background-color: transparent;
     margin-left: 40px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
-   .video__item--progress span::after {
+  .video__item--progress span::after {
     margin-left: 40px;
     width: 10px;
     height: 10px;

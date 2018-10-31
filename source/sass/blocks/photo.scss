@@ -65,13 +65,17 @@
   padding-bottom: 20px;
 }
 
-@media (min-width: $tablet-width) {fill
+.photo__hyphenate {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
   .photo {
     width: 648px;
     padding: 0;
     margin: 0 auto;
-    padding-bottom: 33px;
-    margin-top: 70px;
+    padding-bottom: 18px;
+    margin-top: 40px;
   }
 
   .photo__hyphenate {
