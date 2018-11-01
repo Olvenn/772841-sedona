@@ -478,6 +478,11 @@
     padding-left: 22px;
   }
 
+  .feedback-form__fieldset--fullname {
+    padding-bottom: 9px;
+  }
+
+
   .feedback-form__wrapper--contact {
     display: flex;
     flex-wrap: wrap;
@@ -490,6 +495,7 @@
   .feedback-form__fieldset--contact {
     flex-basis: 960px;
     font-size: 14px;
+    margin-bottom: -3px;
 
     &:nth-child(2) {
       margin-top: 28px;
@@ -525,6 +531,7 @@
 
   .feedback-form__fieldset--emotions {
     margin-bottom: 15px;
+    margin-top: -27px;
   }
 
   .feedback-form__fieldset--emotions .feedback-form__legend {
@@ -535,6 +542,7 @@
 
   .feedback-form__textarea {
     width: 960px;
+    margin-bottom: 60px;
   }
 
   .feedback-form__legend--fullname {
@@ -559,6 +567,7 @@
     padding-left: 25px;
     display: flex;
     align-items: center;
+    margin-bottom: -4px;
   }
 
   .feedback-form__label--checkbox {
