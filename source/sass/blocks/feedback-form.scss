@@ -77,7 +77,7 @@
 }
 
 .feedback-form__input-wrapper--fullname {
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   display: flex;
   align-items: center;
   padding-top: 1px;
@@ -123,7 +123,7 @@
   align-items: flex-start;
   padding-left: 10px;
   padding-top: 0;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 }
 
 .feedback-form__input-wrapper--contact .feedback-form__label--text {
@@ -221,14 +221,15 @@
 .feedback-form__fieldset--sights {
   margin-top: 0;
   padding-bottom: 2px;
+  margin-bottom: -5px;
 }
 
 .feedback-form__input-wrapper--sights {
   justify-content: flex-start;
   margin-bottom: 20px;
   position: relative;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 12px;
+  padding-bottom: 22px;
 }
 
 .feedback-form__label--checkbox {
@@ -288,6 +289,7 @@
 
 .feedback-form__submit {
   width: 280px;
+  margin-top: 5px;
 }
 
 .feedback-form__fieldset--emotions {
@@ -357,11 +359,15 @@
     padding-left: 3px;
   }
 
+  .feedback-form__input-wrapper--fullname {
+    margin-bottom: -2px;
+  }
+
   .feedback-form__fieldset--fullname {
     padding-left: 55px;
     padding-right: 0;
     border-left: 1px solid $photo-border;
-    margin-bottom: -5px;
+    margin-bottom: 1px;
   }
 
   .feedback-form__fieldset--impression .feedback-form__input-wrapper {
@@ -401,17 +407,17 @@
 
   .feedback-form__fieldset--sights {
     width: 100%;
-    margin-bottom: 18px;
+    margin-bottom: 13px;
   }
 
   .feedback-form__input-wrapper--sights {
     width: 50%;
-    padding-bottom: 25px;
+    padding-bottom: 32px;
   }
 
   .feedback-form__wrapper--contact {
     margin-bottom: 8px;
-    margin-top: 25px;
+    margin-top: 23px;
   }
 
   .feedback-form__fieldset--contact:nth-child(2) {
@@ -436,12 +442,12 @@
     width: 650px;
     min-height: 160px;
     margin-top: 45px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 
   .feedback-form__required {
     display: block;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 
   .feedback-form__buttom {
@@ -474,12 +480,12 @@
   }
 
   .feedback-form__input-wrapper--fullname:nth-child(1) {
-    margin-top: 47px;
+    margin-top: 43px;
     padding-left: 22px;
   }
 
   .feedback-form__fieldset--fullname {
-    padding-bottom: 9px;
+    padding-bottom: 0;
   }
 
 
@@ -542,7 +548,7 @@
 
   .feedback-form__textarea {
     width: 960px;
-    margin-bottom: 60px;
+    margin-bottom: 52px;
   }
 
   .feedback-form__legend--fullname {
@@ -567,7 +573,7 @@
     padding-left: 25px;
     display: flex;
     align-items: center;
-    margin-bottom: -4px;
+    margin-bottom: -1px;
   }
 
   .feedback-form__label--checkbox {
@@ -589,13 +595,18 @@
     padding-top: 13px;
 
     &:last-child {
-      width: 182px;
+      width: 210px;
     }
 
     &:nth-child(4) {
-      margin-right: 22px;
+      margin-right: -7px;
       margin-left: -20px;
+      margin-bottom: 45px;
     }
+  }
+
+  .feedback-form__label--checkbox-visible {
+    overflow: visible;
   }
 
   .feedback-form__wrapper--sights {
