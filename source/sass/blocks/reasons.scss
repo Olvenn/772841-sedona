@@ -21,7 +21,7 @@
 }
 
 .reasons__subtitle-main {
-  margin-top: 30px;
+  margin-top: 27px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -82,7 +82,7 @@
 
 .reasons__info--fullcolour-first {
   padding-top: 24px;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
   position: relative;
 
   &::before {
@@ -131,7 +131,7 @@
 .reasons__item--town {
   padding-left: 70px;
   padding-top: 14px;
-  margin-bottom: -29px;
+  margin-bottom: -31px;
 }
 
 .reasons__item--accommodation {
@@ -187,6 +187,7 @@
 
   .reasons__title {
     font-size: 21px;
+    padding-bottom: 4px;
   }
 
   .reasons__name--invisible {
