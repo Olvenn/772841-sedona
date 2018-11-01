@@ -44,6 +44,10 @@
   }
 }
 
+.feedback__slogan {
+  margin-bottom: 10px;
+}
+
 .feedback-form__label--text {
   @include subtitle();
   padding-right: 10px;
@@ -69,13 +73,14 @@
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 
 .feedback-form__input-wrapper--fullname {
   padding-bottom: 20px;
   display: flex;
   align-items: center;
+  padding-top: 1px;
 }
 
 .feedback-form__icon {
@@ -144,7 +149,7 @@
   align-items: flex-start;
   padding-left: 20px;
   position: relative;
-  padding-top: 22px;
+  padding-top: 20px;
   padding-bottom: 23px;
 }
 
@@ -309,6 +314,7 @@
   display: none;
 }
 
+
 ///tablet
 
 @media (min-width: $tablet-width) {
@@ -332,6 +338,10 @@
     }
   }
 
+  .feedback__slogan {
+    margin-bottom: 17px;
+  }
+
   .feedback-form__legend {
     font-size: 21px;
     padding-top: 20px;
@@ -343,7 +353,7 @@
   }
 
   .feedback-form__input-wrapper--fullname:nth-child(1) {
-    margin-top: 48px;
+    margin-top: 43px;
     padding-left: 3px;
   }
 
@@ -391,7 +401,7 @@
 
   .feedback-form__fieldset--sights {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .feedback-form__input-wrapper--sights {
@@ -400,7 +410,7 @@
   }
 
   .feedback-form__wrapper--contact {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     margin-top: 25px;
   }
 
@@ -415,7 +425,7 @@
 
   .feedback-form__input-wrapper--contact {
     padding-left: 0;
-    padding-bottom: 25px;
+    padding-bottom: 22px;
   }
 
   .feedback-form__input-wrapper--contact .feedback-form__label--text {
@@ -459,6 +469,7 @@
 
   .feedback__slogan {
     margin-top: -3px;
+    margin-left: -13px;
     margin-bottom: 0;
   }
 
@@ -501,6 +512,7 @@
     padding-left: 0;
     margin-top: 32px;
     margin-left: -20px;
+    padding-bottom: 26px;
   }
 
   .feedback-form__invisible {
@@ -539,6 +551,10 @@
     padding-right: 51px;
   }
 
+  .feedback-form__input-wrapper--impression {
+    margin-top: 42px;
+  }
+
   .feedback-form__input-wrapper--fullname {
     padding-left: 25px;
     display: flex;
@@ -561,7 +577,7 @@
   .feedback-form__input-wrapper--sights {
     width: 250px;
     margin-bottom: 20px;
-    padding-top: 15px;
+    padding-top: 13px;
 
     &:last-child {
       width: 182px;

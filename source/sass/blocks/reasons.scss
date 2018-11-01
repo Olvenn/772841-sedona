@@ -54,8 +54,8 @@
 }
 
 .reasons__item--advantage .reasons__name {
-  padding-top: 20px;
-  margin-bottom: -4px;
+  padding-top: 19px;
+  margin-bottom: -8px;
 }
 
 .reasons__item--advantage .reasons__subtitle {
@@ -100,7 +100,7 @@
 
 .reasons__info--fullcolour-last {
   padding-top: 37px;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
   margin-top: -20px;
 }
 
@@ -130,8 +130,8 @@
 
 .reasons__item--town {
   padding-left: 70px;
-  padding-top: 15px;
-  margin-bottom: -27px;
+  padding-top: 14px;
+  margin-bottom: -29px;
 }
 
 .reasons__item--accommodation {
@@ -262,13 +262,17 @@
     margin-top: 30px;
   }
 
+  .reasons__info--fullcolour-first .reasons__subtitle-white {
+    margin-top: 5px;
+  }
+
   .reasons__subtitle-white {
     padding-left: 43px;
     padding-right: 43px;
   }
 
   .reasons__item--fullcolour-last {
-    margin-top: 65px;
+    margin-top: 63px;
     margin-bottom: -3px;
   }
 
@@ -289,7 +293,7 @@
 
   .reasons__name--town {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     padding: 0;
   }
 
@@ -302,6 +306,14 @@
 
   .reasons__item--accommodation {
     background-image: none;
+  }
+
+  .reasons__item--accommodation .reasons__subtitle {
+    width: 160px;
+  }
+
+  .reasons__item--food .reasons__subtitle {
+    width: 155px;
   }
 
   .reasons__item--souvenirs {
@@ -328,7 +340,7 @@
     width: 77px;
     height: 77px;
     background-image: url("../img/icon-gift_blue.svg");
-    background-position: 0 0;
+    background-position: 0 2px;
     background-repeat: no-repeat;
     background-size: 64px 76px;
     margin: 0 auto;
@@ -339,7 +351,7 @@
     width: 77px;
     height: 77px;
     background-image: url("../img/icon-burger_blue.svg");
-    background-position: 0 0;
+    background-position: 0 4px;
     background-repeat: no-repeat;
     background-size: 77px 69px;
     margin: 0 auto;
@@ -348,7 +360,7 @@
 
   .reasons__item--advantage {
     padding-top: 25px;
-    padding-bottom: 13px;
+    padding-bottom: 14px;
     padding-left: 49px;
     padding-right: 49px;
   }
@@ -356,14 +368,14 @@
   .reasons__item--advantage .reasons__number {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 14px;
-    margin-bottom: 7px;
+    margin-top: 15px;
+    margin-bottom: 9px;
   }
 
   .reasons__item--advantage .reasons__name {
     padding-left: 35px;
     padding-right: 35px;
-    margin-top: -2px;
+    margin-top: -3px;
   }
 
   .reasons__invisible {
@@ -380,7 +392,7 @@
 @media (min-width: $desktop-width) {
   .reasons {
     margin-top: -12px;
-    margin-bottom: 0;
+    margin-bottom: -3px;
   }
 
   .reasons__info--fullcolour {
@@ -401,11 +413,11 @@
   .reasons__list:nth-child(2) .reasons__subtitle-white {
     padding-left: 85px;
     padding-right: 85px;
+    margin-top: 10px;
   }
 
   .reasons__name--town {
-    margin-top: 6px;
-    margin-bottom: 0;
+    margin-top: -2px;
   }
 
   .reasons__item--fullcolour {
@@ -425,8 +437,17 @@
   }
 
   .reasons__info--fullcolour-last {
-    padding-top: 45px;
+    padding-top: 48px;
     width: 230px;
+  }
+
+
+  .reasons__item--accommodation .reasons__subtitle {
+    width: 300px;
+  }
+
+  .reasons__item--food .reasons__subtitle {
+    width: 300px;
   }
 
   .reasons__accommodation {
@@ -452,7 +473,7 @@
 
   .reasons__item--advantage {
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 28px;
     padding-bottom: 36px;
   }
 
