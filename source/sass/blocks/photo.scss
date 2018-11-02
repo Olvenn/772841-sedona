@@ -1,8 +1,8 @@
 .photo {
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 40px;
-  padding-bottom: 20px;
+  margin-top: 37px;
+  padding-bottom: 16px;
 }
 
 .photo__wrapper {
@@ -20,11 +20,12 @@
 
 .photo__subtitle {
   @include text();
-  padding-top: 8px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   line-height: 26px;
   padding-left: 5px;
   padding-right: 5px;
+  margin-bottom: 8px;
 }
 
 .photo__author {
@@ -83,7 +84,7 @@
   }
 
   .photo__caption {
-    padding-top: 32px;
+    padding-top: 25px;
     font-size: 30px;
   }
 
